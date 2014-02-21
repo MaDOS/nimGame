@@ -1,0 +1,5 @@
+C:\Users\Schüler\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+C:\Users\Schüler\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\Schüler\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Schüler\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
+C:\Users\Schüler\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
