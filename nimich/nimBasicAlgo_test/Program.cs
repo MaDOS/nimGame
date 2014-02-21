@@ -15,7 +15,7 @@ namespace nimBasicAlgo_test
             for (int i = 0; i < stickCount; i++)
             {
                 sticks.Push(true);
-            }w
+            }
 
             int remainingStickCount = sticks.Count;
             while (remainingStickCount > 0)
