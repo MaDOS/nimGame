@@ -7,5 +7,9 @@ namespace nimEngine.AI
 {
     public class AI_expert : Player
     {
+		public override int Turn(int currentStickCount)
+		{
+			throw new NotImplementedException();
+		}
     }
 }

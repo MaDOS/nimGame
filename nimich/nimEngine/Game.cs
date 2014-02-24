@@ -13,7 +13,6 @@ namespace nimEngine
             {
                 return this.sticks.Count;
             }
-            private set;
         }
         
         private Stack<Stick> sticks;
@@ -35,20 +34,28 @@ namespace nimEngine
         {
         	while(true)
         	{
-        		this.sticks.Pop(player1.Turn(this.StickCount));
+        		this.takeSticks(player1.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
         			//Player 1 lost
         			Console.WriteLine("Player 1 lost");
         			break;
         		}
-        		this.sticks.Pop(player2.Turn(this.StickCount));
+        		this.takeSticks(player2.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
         			//Player 2 lost
         			Console.WriteLine("Player 2 lost");
         			break;
         		}
+        	}
+        }
+        
+        private void takeSticks(int count)
+        {
+        	for(int i = 0; i < count; i++)
+        	{
+        		this.sticks.Pop();
         	}
         }
     }

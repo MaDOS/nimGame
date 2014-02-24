@@ -19,11 +19,11 @@ namespace nimEngine.AI
 			{
 				if(currentStickCount < 4)
 				{
-					rnd.Next(1,(currentStickCount + 1));
+					return rnd.Next(1,(currentStickCount + 1));
 				}
 				else
 				{
-					rnd.Next(1,4);
+					return rnd.Next(1,4);
 				}
 			}
 		}
