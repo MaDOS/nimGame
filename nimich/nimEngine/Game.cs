@@ -33,7 +33,23 @@ namespace nimEngine
         
         public void start()
         {
-        	while(this.StickCount > 0
+        	while(true)
+        	{
+        		this.sticks.Pop(player1.Turn(this.StickCount));
+        		if(this.StickCount == 0)
+        		{
+        			//Player 1 lost
+        			Console.WriteLine("Player 1 lost");
+        			break;
+        		}
+        		this.sticks.Pop(player2.Turn(this.StickCount));
+        		if(this.StickCount == 0)
+        		{
+        			//Player 2 lost
+        			Console.WriteLine("Player 2 lost");
+        			break;
+        		}
+        	}
         }
     }
 }
