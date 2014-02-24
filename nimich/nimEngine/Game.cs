@@ -15,6 +15,7 @@ namespace nimEngine
             }
             private set;
         }
+        
         private Stack<Stick> sticks;
         private Player player1;
         private Player player2;
@@ -28,6 +29,11 @@ namespace nimEngine
             {
                 this.sticks.Push(new Stick());
             }
+        }
+        
+        public void start()
+        {
+        	while(this.StickCount > 0
         }
     }
 }

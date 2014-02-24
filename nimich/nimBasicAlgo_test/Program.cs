@@ -17,8 +17,7 @@ namespace nimBasicAlgo_test
                 sticks.Push(true);
             }
 
-            int remainingStickCount = sticks.Count;
-            while (remainingStickCount > 0)
+            while (sticks.Count > 0)
             {
                 turn();
             }
@@ -30,7 +29,7 @@ namespace nimBasicAlgo_test
             int remainingStickCount = sticks.Count;
             int amount = 0;
 
-            while (amount < 1 && amount > 3)
+            while (amount < 1 || amount > 3)
             {
                 Console.Write("Amount you want to take: ");
                 amount = Convert.ToInt32(Console.ReadLine());
