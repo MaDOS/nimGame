@@ -30,6 +30,9 @@ namespace nimEngine
             }
         }
         
+/*!
+* spiel wird gestartet
+*/
         public void start()
         {
         	while(true)
