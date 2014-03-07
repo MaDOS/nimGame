@@ -8,3 +8,7 @@ C:\Users\l00s3s\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\bin\Debug\nimB
 C:\Users\l00s3s\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\l00s3s\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
 C:\Users\l00s3s\Desktop\nimich Projekt\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
+C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb

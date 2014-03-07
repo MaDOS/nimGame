@@ -7,6 +7,9 @@ namespace nimEngine
 {
     public class Game
     {
+        public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
+        public event gameOverEventHandler gameOver;
+
         public int StickCount
         {
             get
@@ -30,9 +33,9 @@ namespace nimEngine
             }
         }
         
-/*!
-* spiel wird gestartet
-*/
+        /*!
+        * spiel wird gestartet
+        */
         public void start()
         {
         	while(true)
@@ -42,6 +45,8 @@ namespace nimEngine
         		{
         			//Player 1 lost
         			Console.WriteLine("Player 1 lost");
+
+                    this.gameOver(new GameOverEventArgs(false));
         			break;
         		}
         		this.takeSticks(player2.Turn(this.StickCount));
@@ -49,6 +54,8 @@ namespace nimEngine
         		{
         			//Player 2 lost
         			Console.WriteLine("Player 2 lost");
+
+                    this.gameOver(new GameOverEventArgs(true));
         			break;
         		}
         	}
@@ -60,6 +67,16 @@ namespace nimEngine
         	{
         		this.sticks.Pop();
         	}
+        }
+    }
+
+    public class GameOverEventArgs : EventArgs
+    {
+        public bool player1Won = false;
+
+        public GameOverEventArgs(bool player1Won)
+        {
+            this.player1Won = player1Won;
         }
     }
 }
