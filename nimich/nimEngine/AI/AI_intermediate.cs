@@ -61,13 +61,14 @@ namespace nimEngine.AI
                         }
                     }
                 }
-
                 else
                 {
                     return rnd.Next(1, 4);
                 }
             }
 
+            //dummy damit der build klappt TODO: entfernen
+            return 1;
 		}
     }
 }

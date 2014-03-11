@@ -9,24 +9,27 @@ namespace nimEngine
     public class Game
     {
     	/*!
- 		 *	Fired when player1 begins it's turn
+ 		 *	Ausgelöst wenn der Zug von Player1 beginnt
     	 */ 
     	public delegate void player1StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
     	public event player1StartedTurnEventHandler player1StartedTurn;
-    	
-    	/*!
- 		 *	Fired when player2 begins it's turn
-    	 */
-    	public delegate void player2StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
+
+        /*!
+         *	Ausgelöst wenn der Zug von Player1 beginnt
+         */
+        public delegate void player2StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
     	public event player2StartedTurnEventHandler player2StartedTurn;
     	
     	
     	/*!
- 		 *	Fired when one player draws the last stick
+ 		 *	Ausgelöst wenn ein Spieler das letzte Holz gezogen hat
     	 */
         public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
         public event gameOverEventHandler gameOver;
 
+        /*! 
+         * Gibt den momentanen Stand der übrigen Hölzchen zurück
+         */
         public int StickCount
         {
             get
@@ -51,7 +54,7 @@ namespace nimEngine
         }
         
         /*!
-        * spiel wird gestartet
+        * Startet das Spiel
         */
         public void start()
         {
@@ -59,6 +62,11 @@ namespace nimEngine
         	gameThread.Start();
         }
         
+        /*!
+         * Eigentliche Methode in der das Spiel ausgeführt wird
+         * 
+         * Diese wird allerdings in einem neuen Thread von start() aufgerufen um den Hauptthread nicht zu blockieren
+         */
         private void run()
         {
         	while(true)
@@ -70,7 +78,7 @@ namespace nimEngine
         			//Player 1 lost
         			Console.WriteLine("Player 1 lost");
 
-                    this.gameOver(new GameOverEventArgs(false));
+                    this.gameOver(new GameOverEventArgs(this.player2, this.player1));
         			break;
         		}
         		
@@ -81,7 +89,7 @@ namespace nimEngine
         			//Player 2 lost
         			Console.WriteLine("Player 2 lost");
 
-                    this.gameOver(new GameOverEventArgs(true));
+                    this.gameOver(new GameOverEventArgs(this.player1, this.player2));
         			break;
         		}
         	}
@@ -96,16 +104,24 @@ namespace nimEngine
         }
     }
 
+    /*!
+     * Enthält Referenzen auf Gewinner und Verlierer
+     */
     public class GameOverEventArgs : EventArgs
     {
-        public bool player1Won = false;
+        public Player winner;
+        public Player loser;
 
-        public GameOverEventArgs(bool player1Won)
+        public GameOverEventArgs(Player winner, Player loser)
         {
-            this.player1Won = player1Won;
+            this.winner = winner;
+            this.loser = loser;
         }
     }
     
+    /*!
+     * Enthält Referenz auf den Spieler der gerade zieht
+     */
     public class PlayerStartedTurnEventArgs : EventArgs
     {
     	public Player player;
