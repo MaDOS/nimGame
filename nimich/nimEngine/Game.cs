@@ -2,11 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace nimEngine
 {
     public class Game
     {
+    	/*!
+ 		 *	Fired when player1 begins it's turn
+    	 */ 
+    	public delegate void player1StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
+    	public event player1StartedTurnEventHandler player1StartedTurn;
+    	
+    	/*!
+ 		 *	Fired when player2 begins it's turn
+    	 */
+    	public delegate void player2StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
+    	public event player2StartedTurnEventHandler player2StartedTurn;
+    	
+    	
+    	/*!
+ 		 *	Fired when one player draws the last stick
+    	 */
         public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
         public event gameOverEventHandler gameOver;
 
@@ -38,8 +55,15 @@ namespace nimEngine
         */
         public void start()
         {
+        	Thread gameThread = new Thread(new ThreadStart(run));
+        	gameThread.Start();
+        }
+        
+        private void run()
+        {
         	while(true)
         	{
+        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player1));
         		this.takeSticks(player1.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
@@ -49,6 +73,8 @@ namespace nimEngine
                     this.gameOver(new GameOverEventArgs(false));
         			break;
         		}
+        		
+        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player2));
         		this.takeSticks(player2.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
@@ -78,5 +104,15 @@ namespace nimEngine
         {
             this.player1Won = player1Won;
         }
+    }
+    
+    public class PlayerStartedTurnEventArgs : EventArgs
+    {
+    	public Player player;
+    	
+    	public PlayerStartedTurnEventArgs(Player player)
+    	{
+    		this.player = player;
+    	}
     }
 }

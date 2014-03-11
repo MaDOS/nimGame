@@ -14,3 +14,6 @@ C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicA
 C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache

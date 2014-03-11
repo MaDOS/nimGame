@@ -7,17 +7,40 @@ namespace nimEngine
 {
 	public class Human : Player
     {
+		/*!
+		 * Nach setzen des AmountNextTurn gibt dieser die Rückgabe von Turn() frei
+		 */
+		public bool ReadyForTurn = false;
+		
+		/*!
+		 * Setzt die Rückgabe des nächsten Turns
+		 */
+		public int AmountNextTurn
+		{
+			set
+			{
+				this.amountNextTurn = value;
+			}
+			get
+			{
+				return this.amountNextTurn;
+			}
+		}
+		private int amountNextTurn;
+		
+		public Human(string ident)
+		{
+			this.ident = ident;
+		}
+		
 		public override int Turn(int currentStickCount)
 		{
-            int amount = 0;
-
-            while (amount < 1 || amount > currentStickCount)
-            {
-                Console.Write("Amount you want to take: ");
-                amount = Convert.ToInt32(Console.ReadLine());
-            }
+			while(!ReadyForTurn)
+			{
+				
+			}
             
-            return amount;
+            return this.amountNextTurn;
 		}
     }
 }
