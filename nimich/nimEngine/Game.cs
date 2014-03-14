@@ -97,10 +97,20 @@ namespace nimEngine
         
         private void takeSticks(int count)
         {
-        	for(int i = 0; i < count; i++)
-        	{
-        		this.sticks.Pop();
-        	}
+            if (count > 0)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    this.sticks.Pop();
+                }
+            }
+            else
+            {
+                for (int i = 0; i > count; i--)
+                {
+                    this.sticks.Push(new Stick());
+                }
+            }
         }
     }
 

@@ -1,73 +1,95 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="nimEngine.GameOverEventArgs" Collapsed="False">
-    <Position X="0.5" Y="11.2" Width="2.731676" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-      <Compartment Name="Fields" Collapsed="False" />
-    </Compartments>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="nimEngine.AI.AI_easy" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AI\AI_easy.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.PlayerStartedTurnEventArgs" Collapsed="False">
-    <Position X="0.5" Y="13.1" Width="3.463542" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-      <Compartment Name="Fields" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.AI.AI_expert" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AI\AI_expert.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.Player" Collapsed="False">
-    <Position X="0.5" Y="0.5" Width="1.437741" />
-    <Compartments>
-      <Compartment Name="Properties" Collapsed="False" />
-      <Compartment Name="Methods" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.AI.AI_hard" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AI\AI_hard.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.Game" Collapsed="False">
-    <Position X="0.5" Y="4.7" Width="3.2" />
-    <Compartments>
-      <Compartment Name="Properties" Collapsed="False" />
-      <Compartment Name="Methods" Collapsed="False" />
-      <Compartment Name="Fields" Collapsed="False" />
-      <Compartment Name="Events" Collapsed="False" />
-      <Compartment Name="Nested Types" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.AI.AI_intermediate" Collapsed="true">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AI\AI_intermediate.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.Stick" Collapsed="False">
-    <Position X="0.5" Y="14.9" Width="1.284811" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.Game">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="nimEngine.Game.player1StartedTurnEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="nimEngine.Game.player2StartedTurnEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="nimEngine.Game.gameOverEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>wCAAAgBAAAIAAAAgAAAAAAAAAAAAAIAAAAAAAAAEAIA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player1" />
+      <Field Name="player2" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="nimEngine.AI.AI_expert" Collapsed="False">
-    <Position X="5.3" Y="0.5" Width="1.040959" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.GameOverEventArgs">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.AI.AI_hard" Collapsed="False">
-    <Position X="5.3" Y="1.6" Width="1" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.PlayerStartedTurnEventArgs">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.AI.AI_intermediate" Collapsed="False">
-    <Position X="5.3" Y="2.7" Width="1.36403" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.Human" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAEAAAAACAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Human.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.AI.AI_easy" Collapsed="False">
-    <Position X="5.3" Y="3.8" Width="1.170192" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="False" />
-      <Compartment Name="Fields" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.Player">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="nimEngine.Human" Collapsed="False">
-    <Position X="0.5" Y="2.3" Width="1.584923" />
-    <Compartments>
-      <Compartment Name="Properties" Collapsed="False" />
-      <Compartment Name="Methods" Collapsed="False" />
-      <Compartment Name="Fields" Collapsed="False" />
-    </Compartments>
+  <Class Name="nimEngine.Stick" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Stick.cs</FileName>
+    </TypeIdentifier>
   </Class>
+  <Font Name="Tahoma" Size="8.25" />
 </ClassDiagram>
