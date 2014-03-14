@@ -8,3 +8,4 @@ C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\bin\Debug\nimEngine.dll
 C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\bin\Debug\nimEngine.pdb
 C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.dll
 C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
+C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.csprojResolveAssemblyReference.cache

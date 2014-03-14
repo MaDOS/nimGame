@@ -1,0 +1,7 @@
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimGUI.exe
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimGUI.pdb
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.csproj.GenerateResource.Cache
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
+C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
