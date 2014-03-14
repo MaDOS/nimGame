@@ -21,3 +21,8 @@ D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAlgo_test\bin\Debug\nimBa
 D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAlgo_test\bin\Debug\nimBasicAlgo_test.pdb
 D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAlgo_test\obj\x86\Debug\nimBasicAlgo_test.exe
 D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAlgo_test\obj\x86\Debug\nimBasicAlgo_test.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAlgo_test\bin\Debug\nimBasicAlgo_test.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAlgo_test\bin\Debug\nimBasicAlgo_test.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAlgo_test\obj\x86\Debug\nimBasicAlgo_test.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAlgo_test\obj\x86\Debug\nimBasicAlgo_test.pdb

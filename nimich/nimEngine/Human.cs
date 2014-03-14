@@ -20,6 +20,7 @@ namespace nimEngine
 			set
 			{
 				this.amountNextTurn = value;
+				this.ReadyForTurn = true;
 			}
 			get
 			{
@@ -35,10 +36,13 @@ namespace nimEngine
 		
 		public override int Turn(int currentStickCount)
 		{
-			while(!ReadyForTurn)
+			while(!this.ReadyForTurn)
 			{
 				
 			}
+			
+			this.ReadyForTurn = false;
+			
             
             return this.amountNextTurn;
 		}
