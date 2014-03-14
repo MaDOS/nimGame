@@ -9,19 +9,6 @@ namespace nimEngine
     public class Game
     {
     	/*!
- 		 *	Ausgelöst wenn der Zug von Player1 beginnt
-    	 */ 
-    	public delegate void player1StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
-    	public event player1StartedTurnEventHandler player1StartedTurn;
-
-        /*!
-         *	Ausgelöst wenn der Zug von Player1 beginnt
-         */
-        public delegate void player2StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
-    	public event player2StartedTurnEventHandler player2StartedTurn;
-    	
-    	
-    	/*!
  		 *	Ausgelöst wenn ein Spieler das letzte Holz gezogen hat
     	 */
         public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
@@ -71,7 +58,6 @@ namespace nimEngine
         {
         	while(true)
         	{
-        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player1));
         		this.takeSticks(player1.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
@@ -82,7 +68,6 @@ namespace nimEngine
         			break;
         		}
         		
-        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player2));
         		this.takeSticks(player2.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
@@ -129,16 +114,5 @@ namespace nimEngine
         }
     }
     
-    /*!
-     * Enthält Referenz auf den Spieler der gerade zieht
-     */
-    public class PlayerStartedTurnEventArgs : EventArgs
-    {
-    	public Player player;
-    	
-    	public PlayerStartedTurnEventArgs(Player player)
-    	{
-    		this.player = player;
-    	}
-    }
+   
 }

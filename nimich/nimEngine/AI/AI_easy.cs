@@ -9,7 +9,7 @@ namespace nimEngine.AI
     {
     	Random rnd = new Random();
 
-		public override int Turn(int currentStickCount)
+        protected override int doTurn(int currentStickCount)
 		{
             if (currentStickCount > 5)
             {

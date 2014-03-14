@@ -7,7 +7,7 @@ namespace nimEngine.AI
 {
     public class AI_hard : Player
     {
-		public override int Turn(int currentStickCount)
+		protected override int doTurn(int currentStickCount)
 		{
             Random rnd = new Random();
             int n = 0;

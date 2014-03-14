@@ -34,7 +34,7 @@ namespace nimEngine
 			this.ident = ident;
 		}
 		
-		public override int Turn(int currentStickCount)
+		protected override int doTurn(int currentStickCount)
 		{
 			while(!this.ReadyForTurn)
 			{

@@ -1,2 +1,4 @@
 /checkOS.txt
 /StringCheck.txt
+*.dll
+*.pdb
