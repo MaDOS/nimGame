@@ -2,14 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace nimEngine
 {
     public class Game
     {
+    	/*!
+ 		 *	Ausgelöst wenn der Zug von Player1 beginnt
+    	 */ 
+    	public delegate void player1StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
+    	public event player1StartedTurnEventHandler player1StartedTurn;
+
+        /*!
+         *	Ausgelöst wenn der Zug von Player1 beginnt
+         */
+        public delegate void player2StartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
+    	public event player2StartedTurnEventHandler player2StartedTurn;
+    	
+    	
+    	/*!
+ 		 *	Ausgelöst wenn ein Spieler das letzte Holz gezogen hat
+    	 */
         public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
         public event gameOverEventHandler gameOver;
 
+        /*! 
+         * Gibt den momentanen Stand der übrigen Hölzchen zurück
+         */
         public int StickCount
         {
             get
@@ -34,28 +54,42 @@ namespace nimEngine
         }
         
         /*!
-        * spiel wird gestartet
+        * Startet das Spiel
         */
         public void start()
         {
+        	Thread gameThread = new Thread(new ThreadStart(run));
+        	gameThread.Start();
+        }
+        
+        /*!
+         * Eigentliche Methode in der das Spiel ausgeführt wird
+         * 
+         * Diese wird allerdings in einem neuen Thread von start() aufgerufen um den Hauptthread nicht zu blockieren
+         */
+        private void run()
+        {
         	while(true)
         	{
+        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player1));
         		this.takeSticks(player1.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
         			//Player 1 lost
         			Console.WriteLine("Player 1 lost");
 
-                    this.gameOver(new GameOverEventArgs(false));
+                    this.gameOver(new GameOverEventArgs(this.player2, this.player1));
         			break;
         		}
+        		
+        		this.player1StartedTurn(new PlayerStartedTurnEventArgs(player2));
         		this.takeSticks(player2.Turn(this.StickCount));
         		if(this.StickCount == 0)
         		{
         			//Player 2 lost
         			Console.WriteLine("Player 2 lost");
 
-                    this.gameOver(new GameOverEventArgs(true));
+                    this.gameOver(new GameOverEventArgs(this.player1, this.player2));
         			break;
         		}
         	}
@@ -63,20 +97,48 @@ namespace nimEngine
         
         private void takeSticks(int count)
         {
-        	for(int i = 0; i < count; i++)
-        	{
-        		this.sticks.Pop();
-        	}
+            if (count > 0)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    this.sticks.Pop();
+                }
+            }
+            else
+            {
+                for (int i = 0; i > count; i--)
+                {
+                    this.sticks.Push(new Stick());
+                }
+            }
         }
     }
 
+    /*!
+     * Enthält Referenzen auf Gewinner und Verlierer
+     */
     public class GameOverEventArgs : EventArgs
     {
-        public bool player1Won = false;
+        public Player winner;
+        public Player loser;
 
-        public GameOverEventArgs(bool player1Won)
+        public GameOverEventArgs(Player winner, Player loser)
         {
-            this.player1Won = player1Won;
+            this.winner = winner;
+            this.loser = loser;
         }
+    }
+    
+    /*!
+     * Enthält Referenz auf den Spieler der gerade zieht
+     */
+    public class PlayerStartedTurnEventArgs : EventArgs
+    {
+    	public Player player;
+    	
+    	public PlayerStartedTurnEventArgs(Player player)
+    	{
+    		this.player = player;
+    	}
     }
 }

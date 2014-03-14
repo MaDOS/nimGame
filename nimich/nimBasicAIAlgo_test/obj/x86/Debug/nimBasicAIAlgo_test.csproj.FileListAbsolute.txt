@@ -14,3 +14,15 @@ C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicA
 C:\Users\Schüler\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\nimGame\nimich\nimBasicAIAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAIAlgo_test\bin\Debug\nimBasicAIAlgo_test.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAIAlgo_test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimBasicAIAlgo_test\obj\x86\Debug\nimBasicAIAlgo_test.pdb

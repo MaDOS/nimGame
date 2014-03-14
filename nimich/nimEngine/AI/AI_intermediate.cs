@@ -66,7 +66,6 @@ namespace nimEngine.AI
                         return rnd.Next(1, 4);
                     }
                 }
-
                 else
                 {
                     return rnd.Next(1, 4);
