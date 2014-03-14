@@ -19,8 +19,9 @@ namespace nimEngine.AI
                 {
                     for (int i = 1; i < 1000; i++)
                     {
-                        n++;
+
                         temporary = 5 + (4 * n);
+                        n++;
 
                         if (temporary >= currentStickCount)
                         {
@@ -60,6 +61,10 @@ namespace nimEngine.AI
                             return rnd.Next(1, 4);
                         }
                     }
+                    else
+                    {
+                        return rnd.Next(1, 4);
+                    }
                 }
 
                 else
@@ -68,6 +73,21 @@ namespace nimEngine.AI
                 }
             }
 
+            else if (currentStickCount == 3)
+            {
+                return rnd.Next(1,3);
+            }
+
+            else if (currentStickCount < 3)
+            {
+                return 1;
+            }
+
+            else
+            {
+                return rnd.Next(1, 4);
+            }
+    
 		}
     }
 }
