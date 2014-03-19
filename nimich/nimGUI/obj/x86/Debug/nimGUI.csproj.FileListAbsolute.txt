@@ -5,3 +5,12 @@ C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.csproj.GenerateResource.Cache
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb

@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+# SharpDevelop 4.2.0.8783
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nimEngine", "nimEngine\nimEngine.csproj", "{BF80902C-42BF-43C6-BE5E-2063197E3163}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nimGUI", "nimGUI\nimGUI.csproj", "{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine_test", "Engine_test\Engine_test.csproj", "{8F417B2D-136E-4D7E-9D57-7234D4402F94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +38,18 @@ Global
 		{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}.Release|x86.ActiveCfg = Release|x86
 		{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}.Release|x86.Build.0 = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|Any CPU.Build.0 = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|x86.Build.0 = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Debug|x86.ActiveCfg = Debug|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|Any CPU.Build.0 = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|Any CPU.ActiveCfg = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|x86.Build.0 = Release|x86
+		{8F417B2D-136E-4D7E-9D57-7234D4402F94}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
