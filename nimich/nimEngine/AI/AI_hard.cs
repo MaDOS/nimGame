@@ -7,6 +7,11 @@ namespace nimEngine.AI
 {
     public class AI_hard : Player
     {
+        public override string ToString()
+        {
+            return "AI hard";
+        }
+
 		public override int Turn(int currentStickCount)
 		{
             Random rnd = new Random();
