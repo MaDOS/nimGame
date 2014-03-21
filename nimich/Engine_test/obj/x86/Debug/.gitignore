@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 *.exe
 *.pdb
+=======
+/Engine_test.exe
+/Engine_test.pdb
+>>>>>>> refs/remotes/origin/ai

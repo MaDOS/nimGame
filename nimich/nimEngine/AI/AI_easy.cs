@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace nimEngine.AI
 {
+    /*!
+         * Leichte AI; hohe Gewinnchancen 
+         * 
+         * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
+         */
+
     public class AI_easy : Player
     {
     	Random rnd = new Random();

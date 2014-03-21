@@ -5,9 +5,24 @@ using System.Text;
 
 namespace nimEngine.AI
 {
+    /*!
+             * Schwere AI;  weniger hohe Gewinnchancen 
+             * 
+             * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
+             */
+
     public class AI_hard : Player
     {
+<<<<<<< HEAD
 		protected override int doTurn(int currentStickCount)
+=======
+        public override string ToString()
+        {
+            return "AI hard";
+        }
+
+		public override int Turn(int currentStickCount)
+>>>>>>> refs/remotes/origin/ai
 		{
             Random rnd = new Random();
             int n = 0;

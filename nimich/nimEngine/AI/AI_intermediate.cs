@@ -5,6 +5,12 @@ using System.Text;
 
 namespace nimEngine.AI
 {
+    /*!
+         * Mittelschwere AI; gemäßigte Gewinnchancen 
+         * 
+         * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
+         */
+
     public class AI_intermediate : Player
     {
 		protected override int doTurn(int currentStickCount)
