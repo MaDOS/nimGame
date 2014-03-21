@@ -5,6 +5,12 @@ using System.Text;
 
 namespace nimEngine.AI
 {
+    /*!
+            * Experten AI;  bei Fehler eines Spielers keine Gewinnmöglichkeit 
+            * 
+            * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
+            */
+
     public class AI_expert : Player
     {
 		public override int Turn(int currentStickCount)

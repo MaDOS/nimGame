@@ -5,6 +5,12 @@ using System.Text;
 
 namespace nimEngine.AI
 {
+    /*!
+            * Troll AI;  niemand weiß wie lange es dauern wird, bis sie gewinnt...oder nicht? 
+            * 
+            * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
+            */
+
     class AI_troll : Player
     {
         Random rnd = new Random();
@@ -18,7 +24,6 @@ namespace nimEngine.AI
 
         public override int Turn(int currentStickCount)
         {
-            int n = 0;
             int temporary = 0;
 
             if (rnd.Next(100) >= 15)
