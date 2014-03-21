@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmMinGameDataPvP.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNimGame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNimGame.Designer.cs">
       <DependentUpon>frmNimGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNimGameDataNetwork.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNimGameDataPvC.cs">
       <SubType>Form</SubType>
