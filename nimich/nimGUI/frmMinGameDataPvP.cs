@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using nimEngine;
 
 namespace nimGUI
 {
@@ -46,8 +47,13 @@ namespace nimGUI
             labNameP1.Text = player[0];
             labNameP2.Text = player[1];
 
+            this.p1 = new Human(player[0]);
+            this.p2 = new Human(player[1]);
+            this.g = new Game(this.p1, this.p2, this.stickCount);
+
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tbPgHotSeat;
+            this.g.start();
         }
     }
 }
