@@ -13,16 +13,12 @@ namespace nimEngine.AI
 
     public class AI_hard : Player
     {
-<<<<<<< HEAD
-		protected override int doTurn(int currentStickCount)
-=======
         public override string ToString()
         {
             return "AI hard";
         }
 
-		public override int Turn(int currentStickCount)
->>>>>>> refs/remotes/origin/ai
+		protected override int doTurn(int currentStickCount)
 		{
             Random rnd = new Random();
             int n = 0;

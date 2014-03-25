@@ -22,7 +22,7 @@ namespace nimEngine.AI
             return BitConverter.ToString(rBytes);
         }
 
-        public override int Turn(int currentStickCount)
+        protected override int doTurn(int currentStickCount)
         {
             int temporary = 0;
 
