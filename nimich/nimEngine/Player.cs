@@ -8,7 +8,7 @@ namespace nimEngine
     public abstract class Player
     {
         /*!
- 		 *	Ausgelöst wenn der Zug von Player beginnt
+ 		 *	Ausgelöst wenn der Zug vom Player beginnt
     	 */
         public delegate void playerStartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
         public event playerStartedTurnEventHandler playerStartedTurn;
