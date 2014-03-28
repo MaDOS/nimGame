@@ -32,7 +32,7 @@ namespace nimGUI
         //Sticks wurden verändert
         void g_stickCountChanged()
         {
-            this.refreshSticks(this.g.StickCount);
+            this.refreshSticks();
         }
 
         //Spiel vorbei
@@ -48,9 +48,9 @@ namespace nimGUI
             }
         }
 
-        void refreshSticks(int currentSticks)
+        void refreshSticks()
         {
-            this.labSticks.Text = currentSticks.ToString();
+        	this.labSticks.Text = this.g.StickCount.ToString();
         }
     }
 }

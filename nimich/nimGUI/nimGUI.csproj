@@ -64,6 +64,7 @@
     <Compile Include="frmNimGameEngineHandling.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNimGamePvP.cs" />
     <Compile Include="frmNimGameSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

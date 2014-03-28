@@ -30,6 +30,6 @@ namespace nimGUI
         private void butHighscore_Click(object sender, EventArgs e)
         {
             //Highscore öffnen
-        }        
+        } 
     }
 }

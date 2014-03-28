@@ -263,6 +263,7 @@
         	this.butNimThree.TabIndex = 7;
         	this.butNimThree.Text = "Nim drei!";
         	this.butNimThree.UseVisualStyleBackColor = true;
+        	this.butNimThree.Click += new System.EventHandler(this.ButNimThreeClick);
         	// 
         	// butNimTwo
         	// 
@@ -272,6 +273,7 @@
         	this.butNimTwo.TabIndex = 6;
         	this.butNimTwo.Text = "Nim zwei!";
         	this.butNimTwo.UseVisualStyleBackColor = true;
+        	this.butNimTwo.Click += new System.EventHandler(this.ButNimTwoClick);
         	// 
         	// butNimOne
         	// 
@@ -281,6 +283,7 @@
         	this.butNimOne.TabIndex = 5;
         	this.butNimOne.Text = "Nim eins!";
         	this.butNimOne.UseVisualStyleBackColor = true;
+        	this.butNimOne.Click += new System.EventHandler(this.ButNimOneClick);
         	// 
         	// labSticks
         	// 

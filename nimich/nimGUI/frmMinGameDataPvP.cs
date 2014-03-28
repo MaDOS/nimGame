@@ -59,6 +59,7 @@ namespace nimGUI
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tbPgHotSeat;
             this.g.start();
+            this.refreshSticks();
         }
     }
 }
