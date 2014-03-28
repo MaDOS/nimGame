@@ -44,8 +44,8 @@ namespace nimGUI
             }
 
             //Übernehmen der Daten
-            labNameP1.Text = player[0];
-            labNameP2.Text = player[1];
+            labPvPP1Name.Text = player[0];
+            labPvPP2Name.Text = player[1];
 
             this.p1 = new Human(player[0]);
             this.p2 = new Human(player[1]);
@@ -59,7 +59,11 @@ namespace nimGUI
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tbPgHotSeat;
             this.g.start();
+            this.gameRunning = true;
             this.refreshSticks();
+
+            this.labPvPP1TakenSticks.Text = drawnSticksP1.ToString();
+            this.labPvPP2TakenSticks.Text = drawnSticksP2.ToString();
         }
     }
 }

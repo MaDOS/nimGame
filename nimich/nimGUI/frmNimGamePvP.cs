@@ -16,42 +16,39 @@ namespace nimGUI
         {
         	if(p1Turn)
         	{
-        		((Human)this.p1).AmountNextTurn = 1;
-        		((Human)this.p1).ReadyForTurn = true;
+                this.humanTakeSticks((Human)p1, 1);
         	}
         	else
-        	{
-        		((Human)this.p2).AmountNextTurn = 1;
-        		((Human)this.p2).ReadyForTurn = true;
+            {
+                this.humanTakeSticks((Human)p2, 1);
         	}
         }
         
         void ButNimTwoClick(object sender, EventArgs e)
         {
-        	if(p1Turn)
-        	{
-        		((Human)this.p1).AmountNextTurn = 2;
-        		((Human)this.p1).ReadyForTurn = true;
-        	}
-        	else
-        	{
-        		((Human)this.p2).AmountNextTurn = 2;
-        		((Human)this.p2).ReadyForTurn = true;
-        	}
+
+            if (p1Turn)
+            {
+                this.humanTakeSticks((Human)p1, 2);
+            }
+            else
+            {
+                this.humanTakeSticks((Human)p2, 2);
+            }
         }
         
         void ButNimThreeClick(object sender, EventArgs e)
         {
-        	if(p1Turn)
-        	{
-        		((Human)this.p1).AmountNextTurn = 3;
-        		((Human)this.p1).ReadyForTurn = true;
-        	}
-        	else
-        	{
-        		((Human)this.p2).AmountNextTurn = 3;
-        		((Human)this.p2).ReadyForTurn = true;
-        	}
+            if (p1Turn)
+            {
+                this.humanTakeSticks((Human)p1, 3);
+            }
+            else
+            {
+                this.humanTakeSticks((Human)p2, 3);
+            }
         }
-	}
+        #region
+        #endregion
+    }
 }
