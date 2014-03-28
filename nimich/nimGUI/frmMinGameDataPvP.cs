@@ -49,7 +49,12 @@ namespace nimGUI
 
             this.p1 = new Human(player[0]);
             this.p2 = new Human(player[1]);
-            this.g = new Game(this.p1, this.p2, this.stickCount);
+            this.g = new Game(this.p1, this.p2, (int)this.numUDStickCount.Value);
+            
+            this.g.gameOver += this.g_gameOver;
+            this.g.stickCountChanged += this.g_stickCountChanged;
+            this.p1.playerStartedTurn += this.p1_playerStartedTurn;
+            this.p2.playerStartedTurn += this.p2_playerStartedTurn;
 
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tbPgHotSeat;

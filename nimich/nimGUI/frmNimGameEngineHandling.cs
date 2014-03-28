@@ -15,7 +15,6 @@ namespace nimGUI
         Game g;
         Player p1;
         Player p2;
-        int stickCount;
         bool p1Turn;
 
         //Zug von Spieler 1 beginnt
@@ -31,7 +30,7 @@ namespace nimGUI
         }
 
         //Sticks wurden verändert
-        void g_stickTaken()
+        void g_stickCountChanged()
         {
             this.refreshSticks(this.g.StickCount);
         }

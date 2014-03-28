@@ -13,6 +13,12 @@ namespace nimEngine
     	 */
         public delegate void gameOverEventHandler(GameOverEventArgs eventArgs);
         public event gameOverEventHandler gameOver;
+        
+        /*!
+ 		 *	Ausgelöst wenn ein Spieler die Hölzchenanzahl verändert
+    	 */
+        public delegate void stickCountChangedEventHandler();
+        public event stickCountChangedEventHandler stickCountChanged;
 
         /*! 
          * Gibt den momentanen Stand der übrigen Hölzchen zurück
@@ -96,6 +102,7 @@ namespace nimEngine
                     this.sticks.Push(new Stick());
                 }
             }
+            this.stickCountChanged();
         }
     }
 

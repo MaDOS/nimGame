@@ -61,6 +61,10 @@
     <Compile Include="frmNimGameDataPvC.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNimGameEngineHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNimGameSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmNimGame.resx">
@@ -84,6 +88,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nimEngine\nimEngine.csproj">
+      <Project>{BF80902C-42BF-43C6-BE5E-2063197E3163}</Project>
+      <Name>nimEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

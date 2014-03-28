@@ -14,3 +14,5 @@ C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\Generat
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.dll
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.pdb

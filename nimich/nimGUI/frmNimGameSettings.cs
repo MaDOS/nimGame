@@ -12,9 +12,5 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
-        Game g;
-        Player p1;
-        Player p2;
-        int stickCount;
-    }
+	}
 }
