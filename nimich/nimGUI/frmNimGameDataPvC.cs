@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using nimEngine;
 
 namespace nimGUI
 {
@@ -14,30 +15,49 @@ namespace nimGUI
         private void btnStartPvCMode_Click(object sender, EventArgs e)
         {
             //Spielerdatenblatt öffnen
-            
+            this.tabMain.SelectedTab = this.tbPgDataPvC;
         }
 
         private void btnStartPvCGamePvCData_Click(object sender, EventArgs e)
         {
             //Player vs. Computer
+            string playerName = this.txtPlayer1NamePvCData.Text;
 
-            string player = txtPlayer1NamePvCData.Text;
-            string message = "Spieler1: Bitte geben Sie ihren Namen ein!";
-
-            if (txtPlayer1NamePvCData.Text == "")
+            //check for playername
+            if (playerName == "")
             {
-                MessageBox.Show(message);
+                MessageBox.Show("Bitte geben sie einen Namen für Spieler 1 ein!");
                 return;
             }
-            else
+
+            //check for selected AI
+            if (this.cmbBxAIPvCData.SelectedIndex == -1)
             {
-                player = txtPlayer1NamePvCData.Text;
+                MessageBox.Show("Bitte wählen sie einen Gegner!");
+                return;
             }
 
-            //TODO: Spielerdaten übernehmen
+            this.p1 = new Human(playerName);
+            this.p2 = (Player)this.cmbBxAIPvCData.SelectedItem;
+            this.g = new Game(this.p1, this.p2, (int)this.numUDStickCountSettings.Value);
+
+            //Übernehmen der Daten
+            lblP1NamePvP.Text = this.p1.ident;
+            lblP2NamePvP.Text = this.p2.ToString();
+
+            this.g.gameOver += this.g_gameOverPvP;
+            this.g.stickCountChanged += this.g_stickCountChangedPvC;
+            this.p1.playerStartedTurn += this.p1_playerStartedTurnPvC;
+            this.p2.playerStartedTurn += this.p2_playerStartedTurnPvC;
 
             //Öffnen des Spielfensters
-            tabMain.SelectedTab = tabPgGamePvC;
+            tabMain.SelectedTab = this.tbPgGamePvC;
+            this.g.start();
+            this.gameRunning = true;
+            this.refreshSticksPvC();
+
+            this.lblDrawnSticksP1PvP.Text = drawnSticksP1PvP.ToString();
+            this.lblDrawnSticksP2PvP.Text = drawnSticksP2PvP.ToString();
         }
     }
 }

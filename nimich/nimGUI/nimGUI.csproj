@@ -66,7 +66,12 @@
     <Compile Include="frmNimGameEngineHandling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNimGameGameOver.cs" />
+    <Compile Include="frmNimGameGameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNimGamePvC.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNimGamePvP.cs">
       <SubType>Form</SubType>
     </Compile>

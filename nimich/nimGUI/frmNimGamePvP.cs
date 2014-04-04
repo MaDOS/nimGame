@@ -11,45 +11,67 @@ using nimEngine;
 namespace nimGUI
 {
     public partial class frmNimGame : Form
-    {          
-        void butNimOnePvP_Click(object sender, EventArgs e)
+    {       
+
+        private void btnNim1PvP_Click(object sender, EventArgs e)
         {
-        	if(p1Turn)
+        	if(p1TurnPvP)
         	{
-                this.humanTakeSticks((Human)p1, 1);
+                this.humanTakeSticksPvP((Human)p1, 1);
         	}
         	else
             {
-                this.humanTakeSticks((Human)p2, 1);
+                this.humanTakeSticksPvP((Human)p2, 1);
         	}
         }
-        
-        void butNimTwoPvP_Click(object sender, EventArgs e)
-        {
 
-            if (p1Turn)
+        private void btnNim2PvP_Click(object sender, EventArgs e)
+        {
+            if (p1TurnPvP)
             {
-                this.humanTakeSticks((Human)p1, 2);
+                this.humanTakeSticksPvP((Human)p1, 2);
             }
             else
             {
-                this.humanTakeSticks((Human)p2, 2);
+                this.humanTakeSticksPvP((Human)p2, 2);
             }
         }
         
-        void butNimThreePvP_Click(object sender, EventArgs e)
+        private void btnNim3PvP_Click(object sender, EventArgs e)
         {
-            if (p1Turn)
+            if (p1TurnPvP)
             {
-                this.humanTakeSticks((Human)p1, 3);
+                this.humanTakeSticksPvP((Human)p1, 3);
             }
             else
             {
-                this.humanTakeSticks((Human)p2, 3);
+                this.humanTakeSticksPvP((Human)p2, 3);
             }
         }
         
         #region helper
+
+        void humanTakeSticksPvP(Human p, int stickCount)
+        {
+            if (!gameRunning)
+            {
+                return;
+            }
+            p.AmountNextTurn = stickCount;
+            p.ReadyForTurn = true;
+
+            if (p1TurnPvP == true)
+            {
+                this.drawnSticksP1PvP += stickCount;
+                this.lblDrawnSticksP1PvP.Text = this.drawnSticksP1PvP.ToString();
+            }
+            else
+            {
+                this.drawnSticksP2PvP += stickCount;
+                this.lblDrawnSticksP2PvP.Text = this.drawnSticksP2PvP.ToString();
+            }
+        }
+
         void resetGamePvP()
         {
         	this.btnNim1PvP.Enabled = true;
@@ -57,10 +79,11 @@ namespace nimGUI
         	this.btnNim3PvP.Enabled = true;
         	this.lblDrawnSticksP1PvP.Text = "0";
         	this.lblDrawnSticksP2PvP.Text = "0";
-        	this.drawnSticksP1 = 0;
-        	this.drawnSticksP2 = 0;
-        	this.refreshSticks();
+        	this.drawnSticksP1PvP = 0;
+        	this.drawnSticksP2PvP = 0;
+        	this.refreshSticksPvP();
         }
+
         #endregion
     }
 }

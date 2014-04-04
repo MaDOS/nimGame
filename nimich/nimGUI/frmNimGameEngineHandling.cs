@@ -14,97 +14,135 @@ namespace nimGUI
     {
         Game g;
         Player p1, p2;
-        bool p1Turn, gameRunning;
-        int drawnSticksP1, drawnSticksP2 = 0;
+        bool gameRunning;
+
+        #region PVP
+
+        bool p1TurnPvP;
+        int drawnSticksP1PvP, drawnSticksP2PvP = 0;
 
         //Zug von Spieler 1 beginnt
-        void p1_playerStartedTurn(nimEngine.PlayerStartedTurnEventArgs eventArgs)
+        void p1_playerStartedTurnPvP(nimEngine.PlayerStartedTurnEventArgs eventArgs)
         {
-            this.p1Turn = true;
-            this.setp1Active();
+            this.p1TurnPvP = true;
+            this.setp1ActivePvP();
         }
 
         //Zug von Spieler 2 beginnt
-        void p2_playerStartedTurn(nimEngine.PlayerStartedTurnEventArgs eventArgs)
+        void p2_playerStartedTurnPvP(nimEngine.PlayerStartedTurnEventArgs eventArgs)
         {
-            this.p1Turn = false;
-            this.setp2Active();
+            this.p1TurnPvP = false;
+            this.setp2ActivePvP();
         }
 
         //Sticks wurden verändert
-        void g_stickCountChanged()
+        void g_stickCountChangedPvP()
         {
-        	switch(g.StickCount)
-        	{
-        		case 2:
-        			this.btnNim3PvP.Enabled = false;
-        			break;
-        		case 1:         			
-        			this.btnNim3PvP.Enabled = false;
-        			this.btnNim2PvP.Enabled = false;
-        			break;
-        		default:
-        			this.btnNim2PvP.Enabled = true;
-        			this.btnNim3PvP.Enabled = true;
-        			break;
-        			
-        	}
-            this.refreshSticks();
+            switch (g.StickCount)
+            {
+                case 2:
+                    this.btnNim3PvP.Enabled = false;
+                    break;
+                case 1:
+                    this.btnNim3PvP.Enabled = false;
+                    this.btnNim2PvP.Enabled = false;
+                    break;
+                default:
+                    this.btnNim2PvP.Enabled = true;
+                    this.btnNim3PvP.Enabled = true;
+                    break;
+
+            }
+            this.refreshSticksPvP();
         }
 
         //Spiel vorbei
-        void g_gameOver(nimEngine.GameOverEventArgs eventArgs)
+        void g_gameOverPvP(nimEngine.GameOverEventArgs eventArgs)
         {
             this.gameRunning = false;
             this.lblWinner.Text = "Gewinner: " + eventArgs.winner.ident;
-			this.tabMain.SelectedTab = this.tbPgGameOver;
-            
-			this.btnNim1PvP.Enabled = false;
-        	this.btnNim2PvP.Enabled = false;
-        	this.btnNim3PvP.Enabled = false;
-        	this.resetGamePvP();
+            this.tabMain.SelectedTab = this.tbPgGameOver;
+
+            this.btnNim1PvP.Enabled = false;
+            this.btnNim2PvP.Enabled = false;
+            this.btnNim3PvP.Enabled = false;
+            this.resetGamePvP();
         }
 
-#region helper
+            #region helper
 
-        void refreshSticks()
-        {
-        	this.lblStickCountPvP.Text = this.g.StickCount.ToString();
-        }
-
-        void setp1Active()
-        {
-            this.panPvPP1.BackColor = Color.LimeGreen;
-            this.panPvPP2.BackColor = Color.Transparent;
-        }
-
-        void setp2Active()
-        {
-            this.panPvPP2.BackColor = Color.LimeGreen;
-            this.panPvPP1.BackColor = Color.Transparent;
-        }
-
-        void humanTakeSticks(Human p, int stickCount)
-        {
-            if (!gameRunning)
+            void refreshSticksPvP()
             {
-                return;
+                this.lblStickCountPvP.Text = this.g.StickCount.ToString();
             }
-            p.AmountNextTurn = stickCount;
-            p.ReadyForTurn = true;
 
-            if (p1Turn == true)
+            void setp1ActivePvP()
             {
-                this.drawnSticksP1 += stickCount;
-                this.lblDrawnSticksP1PvP.Text = this.drawnSticksP1.ToString();
+                this.panP1PvP.BackColor = Color.LimeGreen;
+                this.panP2PvP.BackColor = Color.Transparent;
             }
-            else
+
+            void setp2ActivePvP()
             {
-                this.drawnSticksP2 += stickCount;
-                this.lblDrawnSticksP2PvP.Text = this.drawnSticksP2.ToString();
+                this.panP2PvP.BackColor = Color.LimeGreen;
+                this.panP1PvP.BackColor = Color.Transparent;
             }
+
+            #endregion
+
+        #endregion
+
+        #region PVC
+
+        int drawnSticksP1PvC, drawnSticksP2PvC = 0;
+
+        //Zug von Spieler 1 beginnt
+        void p1_playerStartedTurnPvC(nimEngine.PlayerStartedTurnEventArgs eventArgs)
+        {
+            this.setp1ActivePvC();
         }
 
-#endregion
+        //Zug von Spieler 2 beginnt
+        void p2_playerStartedTurnPvC(nimEngine.PlayerStartedTurnEventArgs eventArgs)
+        {
+            this.setp2ActivePvC();
+        }
+
+        //Sticks wurden verändert
+        void g_stickCountChangedPvC()
+        {
+            this.refreshSticksPvC();
+        }
+
+        //Spiel vorbei
+        void g_gameOverPvC(nimEngine.GameOverEventArgs eventArgs)
+        {
+            gameRunning = false;
+            MessageBox.Show(eventArgs.winner.ident);
+        }
+
+            #region helper
+
+            void refreshSticksPvC()
+            {
+                this.lblStickCountPvC.Text = this.g.StickCount.ToString();
+            }
+
+            void setp1ActivePvC()
+            {
+                this.panP1PvP.BackColor = Color.LimeGreen;
+                this.panP2PvP.BackColor = Color.Transparent;
+            }
+
+            void setp2ActivePvC()
+            {
+                this.panP2PvP.BackColor = Color.LimeGreen;
+                this.panP1PvP.BackColor = Color.Transparent;
+            }
+
+            #endregion
+
+        #endregion
+
     }
 }

@@ -51,19 +51,19 @@ namespace nimGUI
             this.p2 = new Human(player[1]);
             this.g = new Game(this.p1, this.p2, (int)this.numUDStickCountSettings.Value);
             
-            this.g.gameOver += this.g_gameOver;
-            this.g.stickCountChanged += this.g_stickCountChanged;
-            this.p1.playerStartedTurn += this.p1_playerStartedTurn;
-            this.p2.playerStartedTurn += this.p2_playerStartedTurn;
+            this.g.gameOver += this.g_gameOverPvP;
+            this.g.stickCountChanged += this.g_stickCountChangedPvP;
+            this.p1.playerStartedTurn += this.p1_playerStartedTurnPvP;
+            this.p2.playerStartedTurn += this.p2_playerStartedTurnPvP;
 
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tbPgPvP;
             this.g.start();
             this.gameRunning = true;
-            this.refreshSticks();
+            this.refreshSticksPvP();
 
-            this.lblDrawnSticksP1PvP.Text = drawnSticksP1.ToString();
-            this.lblDrawnSticksP2PvP.Text = drawnSticksP2.ToString();
+            this.lblDrawnSticksP1PvP.Text = drawnSticksP1PvP.ToString();
+            this.lblDrawnSticksP2PvP.Text = drawnSticksP2PvP.ToString();
         }
     }
 }
