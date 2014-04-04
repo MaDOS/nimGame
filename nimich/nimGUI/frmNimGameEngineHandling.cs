@@ -56,19 +56,13 @@ namespace nimGUI
         void g_gameOver(nimEngine.GameOverEventArgs eventArgs)
         {
             this.gameRunning = false;
-            MessageBox.Show("Gewinner ist " + eventArgs.winner.ident);
+            this.lblWinner.Text = "Gewinner: " + eventArgs.winner.ident;
+			this.tabMain.SelectedTab = this.tbPgGameOver;
             
 			this.btnNim1PvP.Enabled = false;
         	this.btnNim2PvP.Enabled = false;
         	this.btnNim3PvP.Enabled = false;
-            //if (this.p1.ident == eventArgs.winner.ident)
-            //{
-            //    //spieler 1 ist gewinner
-            //}
-            //else
-            //{
-            //    //gewinnt spieler 2
-            //}
+        	this.resetGamePvP();
         }
 
 #region helper

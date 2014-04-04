@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
         	this.tabMain = new System.Windows.Forms.TabControl();
-        	this.tbPgStart = new System.Windows.Forms.TabPage();
+        	this.tbPgMain = new System.Windows.Forms.TabPage();
         	this.btnHighscoreMain = new System.Windows.Forms.Button();
         	this.btnSettingsMain = new System.Windows.Forms.Button();
         	this.btnStartGameMain = new System.Windows.Forms.Button();
@@ -70,8 +70,10 @@
         	this.lblStickCountSettingsDesc = new System.Windows.Forms.Label();
         	this.numUDStickCountSettings = new System.Windows.Forms.NumericUpDown();
         	this.tbPgGameOver = new System.Windows.Forms.TabPage();
+        	this.btnBackToMainGameOver = new System.Windows.Forms.Button();
+        	this.lblWinner = new System.Windows.Forms.Label();
         	this.tabMain.SuspendLayout();
-        	this.tbPgStart.SuspendLayout();
+        	this.tbPgMain.SuspendLayout();
         	this.tbPgGameMode.SuspendLayout();
         	this.tbPgGamePvP.SuspendLayout();
         	this.tbPgPvP.SuspendLayout();
@@ -80,11 +82,12 @@
         	this.tbPgDataPvC.SuspendLayout();
         	this.tabPgSettings.SuspendLayout();
         	((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).BeginInit();
+        	this.tbPgGameOver.SuspendLayout();
         	this.SuspendLayout();
         	// 
         	// tabMain
         	// 
-        	this.tabMain.Controls.Add(this.tbPgStart);
+        	this.tabMain.Controls.Add(this.tbPgMain);
         	this.tabMain.Controls.Add(this.tbPgGameMode);
         	this.tabMain.Controls.Add(this.tbPgGamePvP);
         	this.tabMain.Controls.Add(this.tbPgPvP);
@@ -100,18 +103,18 @@
         	this.tabMain.Size = new System.Drawing.Size(992, 767);
         	this.tabMain.TabIndex = 0;
         	// 
-        	// tbPgStart
+        	// tbPgMain
         	// 
-        	this.tbPgStart.Controls.Add(this.btnHighscoreMain);
-        	this.tbPgStart.Controls.Add(this.btnSettingsMain);
-        	this.tbPgStart.Controls.Add(this.btnStartGameMain);
-        	this.tbPgStart.Location = new System.Drawing.Point(4, 22);
-        	this.tbPgStart.Name = "tbPgStart";
-        	this.tbPgStart.Padding = new System.Windows.Forms.Padding(3);
-        	this.tbPgStart.Size = new System.Drawing.Size(984, 741);
-        	this.tbPgStart.TabIndex = 0;
-        	this.tbPgStart.Text = "Start";
-        	this.tbPgStart.UseVisualStyleBackColor = true;
+        	this.tbPgMain.Controls.Add(this.btnHighscoreMain);
+        	this.tbPgMain.Controls.Add(this.btnSettingsMain);
+        	this.tbPgMain.Controls.Add(this.btnStartGameMain);
+        	this.tbPgMain.Location = new System.Drawing.Point(4, 22);
+        	this.tbPgMain.Name = "tbPgMain";
+        	this.tbPgMain.Padding = new System.Windows.Forms.Padding(3);
+        	this.tbPgMain.Size = new System.Drawing.Size(984, 741);
+        	this.tbPgMain.TabIndex = 0;
+        	this.tbPgMain.Text = "Main";
+        	this.tbPgMain.UseVisualStyleBackColor = true;
         	// 
         	// btnHighscoreMain
         	// 
@@ -525,6 +528,8 @@
         	// 
         	// tbPgGameOver
         	// 
+        	this.tbPgGameOver.Controls.Add(this.lblWinner);
+        	this.tbPgGameOver.Controls.Add(this.btnBackToMainGameOver);
         	this.tbPgGameOver.Location = new System.Drawing.Point(4, 22);
         	this.tbPgGameOver.Name = "tbPgGameOver";
         	this.tbPgGameOver.Padding = new System.Windows.Forms.Padding(3);
@@ -532,6 +537,24 @@
         	this.tbPgGameOver.TabIndex = 9;
         	this.tbPgGameOver.Text = "Game Over";
         	this.tbPgGameOver.UseVisualStyleBackColor = true;
+        	// 
+        	// btnBackToMainGameOver
+        	// 
+        	this.btnBackToMainGameOver.Location = new System.Drawing.Point(6, 117);
+        	this.btnBackToMainGameOver.Name = "btnBackToMainGameOver";
+        	this.btnBackToMainGameOver.Size = new System.Drawing.Size(75, 23);
+        	this.btnBackToMainGameOver.TabIndex = 0;
+        	this.btnBackToMainGameOver.Text = "Hauptmenü";
+        	this.btnBackToMainGameOver.UseVisualStyleBackColor = true;
+        	this.btnBackToMainGameOver.Click += new System.EventHandler(this.BtnBackToMainGameOverClick);
+        	// 
+        	// lblWinner
+        	// 
+        	this.lblWinner.Location = new System.Drawing.Point(12, 14);
+        	this.lblWinner.Name = "lblWinner";
+        	this.lblWinner.Size = new System.Drawing.Size(100, 23);
+        	this.lblWinner.TabIndex = 1;
+        	this.lblWinner.Text = "Gewinner:";
         	// 
         	// frmNimGame
         	// 
@@ -542,7 +565,7 @@
         	this.Name = "frmNimGame";
         	this.Text = "nimGame";
         	this.tabMain.ResumeLayout(false);
-        	this.tbPgStart.ResumeLayout(false);
+        	this.tbPgMain.ResumeLayout(false);
         	this.tbPgGameMode.ResumeLayout(false);
         	this.tbPgGamePvP.ResumeLayout(false);
         	this.tbPgGamePvP.PerformLayout();
@@ -556,8 +579,11 @@
         	this.tbPgDataPvC.PerformLayout();
         	this.tabPgSettings.ResumeLayout(false);
         	((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).EndInit();
+        	this.tbPgGameOver.ResumeLayout(false);
         	this.ResumeLayout(false);
         }
+        private System.Windows.Forms.Label lblWinner;
+        private System.Windows.Forms.Button btnBackToMainGameOver;
         private System.Windows.Forms.TabPage tbPgGameOver;
         private System.Windows.Forms.ComboBox cmbBxAIPvCData;
         private System.Windows.Forms.NumericUpDown numUDStickCountSettings;
@@ -567,7 +593,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabMain;
-        private System.Windows.Forms.TabPage tbPgStart;
+        private System.Windows.Forms.TabPage tbPgMain;
         private System.Windows.Forms.TabPage tbPgGameMode;
         private System.Windows.Forms.Button btnStartGameMain;
         private System.Windows.Forms.Button btnHighscoreMain;
@@ -603,6 +629,7 @@
         private System.Windows.Forms.Label lblDrawnSticksP2PvPDesc;
         private System.Windows.Forms.Label lblDrawnSticksP1PvPDesc;
         private System.Windows.Forms.Label lblStickCountPvPDesc;
+        
     }
 }
 

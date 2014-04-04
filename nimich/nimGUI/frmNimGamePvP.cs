@@ -50,13 +50,15 @@ namespace nimGUI
         }
         
         #region helper
-        void resetControlsGamePvP()
+        void resetGamePvP()
         {
         	this.btnNim1PvP.Enabled = true;
         	this.btnNim2PvP.Enabled = true;
         	this.btnNim3PvP.Enabled = true;
         	this.lblDrawnSticksP1PvP.Text = "0";
         	this.lblDrawnSticksP2PvP.Text = "0";
+        	this.drawnSticksP1 = 0;
+        	this.drawnSticksP2 = 0;
         	this.refreshSticks();
         }
         #endregion
