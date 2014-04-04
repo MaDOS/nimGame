@@ -51,11 +51,11 @@
         	this.lblP2NamePvP = new System.Windows.Forms.Label();
         	this.panPvPP1 = new System.Windows.Forms.Panel();
         	this.lblDrawnSticksP1PvPDesc = new System.Windows.Forms.Label();
-        	this.lblDrawnSticksP1Pvp = new System.Windows.Forms.Label();
+        	this.lblDrawnSticksP1PvP = new System.Windows.Forms.Label();
         	this.lblP1NamePvP = new System.Windows.Forms.Label();
-        	this.butNimThreePvP = new System.Windows.Forms.Button();
-        	this.butNimTwoPvP = new System.Windows.Forms.Button();
-        	this.butNimOnePvP = new System.Windows.Forms.Button();
+        	this.btnNim3PvP = new System.Windows.Forms.Button();
+        	this.btnNim2PvP = new System.Windows.Forms.Button();
+        	this.btnNim1PvP = new System.Windows.Forms.Button();
         	this.lblStickCountPvP = new System.Windows.Forms.Label();
         	this.tbPgDataPvC = new System.Windows.Forms.TabPage();
         	this.cmbBxAIPvCData = new System.Windows.Forms.ComboBox();
@@ -69,6 +69,7 @@
         	this.tabPgSettings = new System.Windows.Forms.TabPage();
         	this.lblStickCountSettingsDesc = new System.Windows.Forms.Label();
         	this.numUDStickCountSettings = new System.Windows.Forms.NumericUpDown();
+        	this.tbPgGameOver = new System.Windows.Forms.TabPage();
         	this.tabMain.SuspendLayout();
         	this.tbPgStart.SuspendLayout();
         	this.tbPgGameMode.SuspendLayout();
@@ -92,6 +93,7 @@
         	this.tabMain.Controls.Add(this.tabPgDataNetwork);
         	this.tabMain.Controls.Add(this.tabPgNetwork);
         	this.tabMain.Controls.Add(this.tabPgSettings);
+        	this.tabMain.Controls.Add(this.tbPgGameOver);
         	this.tabMain.Location = new System.Drawing.Point(-4, -1);
         	this.tabMain.Name = "tabMain";
         	this.tabMain.SelectedIndex = 0;
@@ -246,9 +248,9 @@
         	this.tbPgPvP.Controls.Add(this.lblStickCountPvPDesc);
         	this.tbPgPvP.Controls.Add(this.panPvPP2);
         	this.tbPgPvP.Controls.Add(this.panPvPP1);
-        	this.tbPgPvP.Controls.Add(this.butNimThreePvP);
-        	this.tbPgPvP.Controls.Add(this.butNimTwoPvP);
-        	this.tbPgPvP.Controls.Add(this.butNimOnePvP);
+        	this.tbPgPvP.Controls.Add(this.btnNim3PvP);
+        	this.tbPgPvP.Controls.Add(this.btnNim2PvP);
+        	this.tbPgPvP.Controls.Add(this.btnNim1PvP);
         	this.tbPgPvP.Controls.Add(this.lblStickCountPvP);
         	this.tbPgPvP.Location = new System.Drawing.Point(4, 22);
         	this.tbPgPvP.Name = "tbPgPvP";
@@ -311,7 +313,7 @@
         	// panPvPP1
         	// 
         	this.panPvPP1.Controls.Add(this.lblDrawnSticksP1PvPDesc);
-        	this.panPvPP1.Controls.Add(this.lblDrawnSticksP1Pvp);
+        	this.panPvPP1.Controls.Add(this.lblDrawnSticksP1PvP);
         	this.panPvPP1.Controls.Add(this.lblP1NamePvP);
         	this.panPvPP1.Location = new System.Drawing.Point(3, 3);
         	this.panPvPP1.Name = "panPvPP1";
@@ -328,15 +330,15 @@
         	this.lblDrawnSticksP1PvPDesc.TabIndex = 11;
         	this.lblDrawnSticksP1PvPDesc.Text = "gezogene Sticks:";
         	// 
-        	// lblDrawnSticksP1Pvp
+        	// lblDrawnSticksP1PvP
         	// 
-        	this.lblDrawnSticksP1Pvp.AutoSize = true;
-        	this.lblDrawnSticksP1Pvp.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        	this.lblDrawnSticksP1Pvp.Location = new System.Drawing.Point(9, 211);
-        	this.lblDrawnSticksP1Pvp.Name = "lblDrawnSticksP1Pvp";
-        	this.lblDrawnSticksP1Pvp.Size = new System.Drawing.Size(74, 65);
-        	this.lblDrawnSticksP1Pvp.TabIndex = 10;
-        	this.lblDrawnSticksP1Pvp.Text = "##";
+        	this.lblDrawnSticksP1PvP.AutoSize = true;
+        	this.lblDrawnSticksP1PvP.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.lblDrawnSticksP1PvP.Location = new System.Drawing.Point(9, 211);
+        	this.lblDrawnSticksP1PvP.Name = "lblDrawnSticksP1PvP";
+        	this.lblDrawnSticksP1PvP.Size = new System.Drawing.Size(74, 65);
+        	this.lblDrawnSticksP1PvP.TabIndex = 10;
+        	this.lblDrawnSticksP1PvP.Text = "##";
         	// 
         	// lblP1NamePvP
         	// 
@@ -348,38 +350,38 @@
         	this.lblP1NamePvP.TabIndex = 0;
         	this.lblP1NamePvP.Text = "Spieler1";
         	// 
-        	// butNimThreePvP
+        	// btnNim3PvP
         	// 
-        	this.butNimThreePvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        	this.butNimThreePvP.Location = new System.Drawing.Point(392, 407);
-        	this.butNimThreePvP.Name = "butNimThreePvP";
-        	this.butNimThreePvP.Size = new System.Drawing.Size(200, 50);
-        	this.butNimThreePvP.TabIndex = 7;
-        	this.butNimThreePvP.Text = "Nim drei!";
-        	this.butNimThreePvP.UseVisualStyleBackColor = true;
-        	this.butNimThreePvP.Click += new System.EventHandler(this.butNimThreePvP_Click);
+        	this.btnNim3PvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.btnNim3PvP.Location = new System.Drawing.Point(392, 407);
+        	this.btnNim3PvP.Name = "btnNim3PvP";
+        	this.btnNim3PvP.Size = new System.Drawing.Size(200, 50);
+        	this.btnNim3PvP.TabIndex = 7;
+        	this.btnNim3PvP.Text = "Nim drei!";
+        	this.btnNim3PvP.UseVisualStyleBackColor = true;
+        	this.btnNim3PvP.Click += new System.EventHandler(this.butNimThreePvP_Click);
         	// 
-        	// butNimTwoPvP
+        	// btnNim2PvP
         	// 
-        	this.butNimTwoPvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        	this.butNimTwoPvP.Location = new System.Drawing.Point(392, 351);
-        	this.butNimTwoPvP.Name = "butNimTwoPvP";
-        	this.butNimTwoPvP.Size = new System.Drawing.Size(200, 50);
-        	this.butNimTwoPvP.TabIndex = 6;
-        	this.butNimTwoPvP.Text = "Nim zwei!";
-        	this.butNimTwoPvP.UseVisualStyleBackColor = true;
-        	this.butNimTwoPvP.Click += new System.EventHandler(this.butNimTwoPvP_Click);
+        	this.btnNim2PvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.btnNim2PvP.Location = new System.Drawing.Point(392, 351);
+        	this.btnNim2PvP.Name = "btnNim2PvP";
+        	this.btnNim2PvP.Size = new System.Drawing.Size(200, 50);
+        	this.btnNim2PvP.TabIndex = 6;
+        	this.btnNim2PvP.Text = "Nim zwei!";
+        	this.btnNim2PvP.UseVisualStyleBackColor = true;
+        	this.btnNim2PvP.Click += new System.EventHandler(this.butNimTwoPvP_Click);
         	// 
-        	// butNimOnePvP
+        	// btnNim1PvP
         	// 
-        	this.butNimOnePvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        	this.butNimOnePvP.Location = new System.Drawing.Point(392, 295);
-        	this.butNimOnePvP.Name = "butNimOnePvP";
-        	this.butNimOnePvP.Size = new System.Drawing.Size(200, 50);
-        	this.butNimOnePvP.TabIndex = 5;
-        	this.butNimOnePvP.Text = "Nim eins!";
-        	this.butNimOnePvP.UseVisualStyleBackColor = true;
-        	this.butNimOnePvP.Click += new System.EventHandler(this.butNimOnePvP_Click);
+        	this.btnNim1PvP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        	this.btnNim1PvP.Location = new System.Drawing.Point(392, 295);
+        	this.btnNim1PvP.Name = "btnNim1PvP";
+        	this.btnNim1PvP.Size = new System.Drawing.Size(200, 50);
+        	this.btnNim1PvP.TabIndex = 5;
+        	this.btnNim1PvP.Text = "Nim eins!";
+        	this.btnNim1PvP.UseVisualStyleBackColor = true;
+        	this.btnNim1PvP.Click += new System.EventHandler(this.butNimOnePvP_Click);
         	// 
         	// lblStickCountPvP
         	// 
@@ -521,6 +523,16 @@
         	        	        	0,
         	        	        	0});
         	// 
+        	// tbPgGameOver
+        	// 
+        	this.tbPgGameOver.Location = new System.Drawing.Point(4, 22);
+        	this.tbPgGameOver.Name = "tbPgGameOver";
+        	this.tbPgGameOver.Padding = new System.Windows.Forms.Padding(3);
+        	this.tbPgGameOver.Size = new System.Drawing.Size(984, 741);
+        	this.tbPgGameOver.TabIndex = 9;
+        	this.tbPgGameOver.Text = "Game Over";
+        	this.tbPgGameOver.UseVisualStyleBackColor = true;
+        	// 
         	// frmNimGame
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,6 +558,7 @@
         	((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).EndInit();
         	this.ResumeLayout(false);
         }
+        private System.Windows.Forms.TabPage tbPgGameOver;
         private System.Windows.Forms.ComboBox cmbBxAIPvCData;
         private System.Windows.Forms.NumericUpDown numUDStickCountSettings;
         private System.Windows.Forms.Label lblStickCountSettingsDesc;
@@ -572,9 +585,9 @@
         private System.Windows.Forms.Label lblP2NamePvP;
         private System.Windows.Forms.Label lblP1NamePvP;
         private System.Windows.Forms.Label lblStickCountPvP;
-        private System.Windows.Forms.Button butNimThreePvP;
-        private System.Windows.Forms.Button butNimTwoPvP;
-        private System.Windows.Forms.Button butNimOnePvP;
+        private System.Windows.Forms.Button btnNim3PvP;
+        private System.Windows.Forms.Button btnNim2PvP;
+        private System.Windows.Forms.Button btnNim1PvP;
         private System.Windows.Forms.TabPage tbPgDataPvC;
         private System.Windows.Forms.Button btnStartPvCGamePvCData;
         private System.Windows.Forms.Label lblPlayer2NamePvCDataDesc;
@@ -586,7 +599,7 @@
         private System.Windows.Forms.Panel panPvPP1;
         private System.Windows.Forms.Panel panPvPP2;
         private System.Windows.Forms.Label lblDrawnSticksP2PvP;
-        private System.Windows.Forms.Label lblDrawnSticksP1Pvp;
+        private System.Windows.Forms.Label lblDrawnSticksP1PvP;
         private System.Windows.Forms.Label lblDrawnSticksP2PvPDesc;
         private System.Windows.Forms.Label lblDrawnSticksP1PvPDesc;
         private System.Windows.Forms.Label lblStickCountPvPDesc;

@@ -62,7 +62,7 @@ namespace nimGUI
             this.gameRunning = true;
             this.refreshSticks();
 
-            this.lblDrawnSticksP1Pvp.Text = drawnSticksP1.ToString();
+            this.lblDrawnSticksP1PvP.Text = drawnSticksP1.ToString();
             this.lblDrawnSticksP2PvP.Text = drawnSticksP2.ToString();
         }
     }
