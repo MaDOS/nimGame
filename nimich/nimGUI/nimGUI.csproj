@@ -69,9 +69,12 @@
     <Compile Include="frmNimGameGameOver.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="frmNimGamePvC.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> Stashed changes
     <Compile Include="frmNimGamePvP.cs">
       <SubType>Form</SubType>
     </Compile>

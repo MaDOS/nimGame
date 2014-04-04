@@ -1,0 +1,4 @@
+C:\Users\Schüler\Desktop\nimGame.git\nimich\Serializer\bin\Debug\Serializer.dll
+C:\Users\Schüler\Desktop\nimGame.git\nimich\Serializer\bin\Debug\Serializer.pdb
+C:\Users\Schüler\Desktop\nimGame.git\nimich\Serializer\obj\Debug\Serializer.dll
+C:\Users\Schüler\Desktop\nimGame.git\nimich\Serializer\obj\Debug\Serializer.pdb

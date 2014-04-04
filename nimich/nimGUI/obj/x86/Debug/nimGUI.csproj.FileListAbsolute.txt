@@ -19,3 +19,13 @@ C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.p
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.dll
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.pdb
 C:\Users\Schüler\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.csprojResolveAssemblyReference.cache
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.exe
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.pdb
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.dll
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.pdb
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csprojResolveAssemblyReference.cache
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
+C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csproj.GenerateResource.Cache

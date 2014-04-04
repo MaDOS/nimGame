@@ -45,11 +45,19 @@
             this.lblPlayer1NamePvPDataDesc = new System.Windows.Forms.Label();
             this.tbPgPvP = new System.Windows.Forms.TabPage();
             this.lblStickCountPvPDesc = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.panP2PvP = new System.Windows.Forms.Panel();
             this.lblDrawnSticksP2PvPDesc = new System.Windows.Forms.Label();
             this.lblDrawnSticksP2PvP = new System.Windows.Forms.Label();
             this.lblP2NamePvP = new System.Windows.Forms.Label();
             this.panP1PvP = new System.Windows.Forms.Panel();
+=======
+            this.panPvPP2 = new System.Windows.Forms.Panel();
+            this.lblDrawnSticksP2PvPDesc = new System.Windows.Forms.Label();
+            this.lblDrawnSticksP2PvP = new System.Windows.Forms.Label();
+            this.lblP2NamePvP = new System.Windows.Forms.Label();
+            this.panPvPP1 = new System.Windows.Forms.Panel();
+>>>>>>> Stashed changes
             this.lblDrawnSticksP1PvPDesc = new System.Windows.Forms.Label();
             this.lblDrawnSticksP1PvP = new System.Windows.Forms.Label();
             this.lblP1NamePvP = new System.Windows.Forms.Label();
@@ -63,6 +71,7 @@
             this.lblPlayer2NamePvCDataDesc = new System.Windows.Forms.Label();
             this.txtPlayer1NamePvCData = new System.Windows.Forms.TextBox();
             this.lblPlayer1NamePvCDataDesc = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.tbPgGamePvC = new System.Windows.Forms.TabPage();
             this.lblStickCountPvCDesc = new System.Windows.Forms.Label();
             this.panP2PvC = new System.Windows.Forms.Panel();
@@ -80,6 +89,12 @@
             this.tbPgDataNetwork = new System.Windows.Forms.TabPage();
             this.tbPgNetwork = new System.Windows.Forms.TabPage();
             this.tbPgSettings = new System.Windows.Forms.TabPage();
+=======
+            this.tabPgGamePvC = new System.Windows.Forms.TabPage();
+            this.tabPgDataNetwork = new System.Windows.Forms.TabPage();
+            this.tabPgNetwork = new System.Windows.Forms.TabPage();
+            this.tabPgSettings = new System.Windows.Forms.TabPage();
+>>>>>>> Stashed changes
             this.lblStickCountSettingsDesc = new System.Windows.Forms.Label();
             this.numUDStickCountSettings = new System.Windows.Forms.NumericUpDown();
             this.tbPgGameOver = new System.Windows.Forms.TabPage();
@@ -90,6 +105,7 @@
             this.tbPgGameMode.SuspendLayout();
             this.tbPgGamePvP.SuspendLayout();
             this.tbPgPvP.SuspendLayout();
+<<<<<<< Updated upstream
             this.panP2PvP.SuspendLayout();
             this.panP1PvP.SuspendLayout();
             this.tbPgDataPvC.SuspendLayout();
@@ -97,6 +113,12 @@
             this.panP2PvC.SuspendLayout();
             this.panP1PvC.SuspendLayout();
             this.tbPgSettings.SuspendLayout();
+=======
+            this.panPvPP2.SuspendLayout();
+            this.panPvPP1.SuspendLayout();
+            this.tbPgDataPvC.SuspendLayout();
+            this.tabPgSettings.SuspendLayout();
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).BeginInit();
             this.tbPgGameOver.SuspendLayout();
             this.SuspendLayout();
@@ -108,10 +130,17 @@
             this.tabMain.Controls.Add(this.tbPgGamePvP);
             this.tabMain.Controls.Add(this.tbPgPvP);
             this.tabMain.Controls.Add(this.tbPgDataPvC);
+<<<<<<< Updated upstream
             this.tabMain.Controls.Add(this.tbPgGamePvC);
             this.tabMain.Controls.Add(this.tbPgDataNetwork);
             this.tabMain.Controls.Add(this.tbPgNetwork);
             this.tabMain.Controls.Add(this.tbPgSettings);
+=======
+            this.tabMain.Controls.Add(this.tabPgGamePvC);
+            this.tabMain.Controls.Add(this.tabPgDataNetwork);
+            this.tabMain.Controls.Add(this.tabPgNetwork);
+            this.tabMain.Controls.Add(this.tabPgSettings);
+>>>>>>> Stashed changes
             this.tabMain.Controls.Add(this.tbPgGameOver);
             this.tabMain.Location = new System.Drawing.Point(-4, -1);
             this.tabMain.Name = "tabMain";
@@ -207,7 +236,11 @@
             // 
             // tbPgGamePvP
             // 
+<<<<<<< Updated upstream
             this.tbPgGamePvP.BackColor = System.Drawing.Color.Transparent;
+=======
+            this.tbPgGamePvP.BackColor = System.Drawing.Color.White;
+>>>>>>> Stashed changes
             this.tbPgGamePvP.Controls.Add(this.btnStartPvPGamePvPData);
             this.tbPgGamePvP.Controls.Add(this.txtPlayerName2PvPData);
             this.tbPgGamePvP.Controls.Add(this.lblPlayer2NamePvPDataDesc);
@@ -265,8 +298,13 @@
             // tbPgPvP
             // 
             this.tbPgPvP.Controls.Add(this.lblStickCountPvPDesc);
+<<<<<<< Updated upstream
             this.tbPgPvP.Controls.Add(this.panP2PvP);
             this.tbPgPvP.Controls.Add(this.panP1PvP);
+=======
+            this.tbPgPvP.Controls.Add(this.panPvPP2);
+            this.tbPgPvP.Controls.Add(this.panPvPP1);
+>>>>>>> Stashed changes
             this.tbPgPvP.Controls.Add(this.btnNim3PvP);
             this.tbPgPvP.Controls.Add(this.btnNim2PvP);
             this.tbPgPvP.Controls.Add(this.btnNim1PvP);
@@ -289,6 +327,7 @@
             this.lblStickCountPvPDesc.TabIndex = 13;
             this.lblStickCountPvPDesc.Text = "Anzahl Sticks";
             // 
+<<<<<<< Updated upstream
             // panP2PvP
             // 
             this.panP2PvP.Controls.Add(this.lblDrawnSticksP2PvPDesc);
@@ -298,6 +337,17 @@
             this.panP2PvP.Name = "panP2PvP";
             this.panP2PvP.Size = new System.Drawing.Size(242, 706);
             this.panP2PvP.TabIndex = 9;
+=======
+            // panPvPP2
+            // 
+            this.panPvPP2.Controls.Add(this.lblDrawnSticksP2PvPDesc);
+            this.panPvPP2.Controls.Add(this.lblDrawnSticksP2PvP);
+            this.panPvPP2.Controls.Add(this.lblP2NamePvP);
+            this.panPvPP2.Location = new System.Drawing.Point(739, 3);
+            this.panPvPP2.Name = "panPvPP2";
+            this.panPvPP2.Size = new System.Drawing.Size(242, 706);
+            this.panPvPP2.TabIndex = 9;
+>>>>>>> Stashed changes
             // 
             // lblDrawnSticksP2PvPDesc
             // 
@@ -329,6 +379,7 @@
             this.lblP2NamePvP.TabIndex = 1;
             this.lblP2NamePvP.Text = "Spieler2";
             // 
+<<<<<<< Updated upstream
             // panP1PvP
             // 
             this.panP1PvP.Controls.Add(this.lblDrawnSticksP1PvPDesc);
@@ -338,6 +389,17 @@
             this.panP1PvP.Name = "panP1PvP";
             this.panP1PvP.Size = new System.Drawing.Size(242, 706);
             this.panP1PvP.TabIndex = 8;
+=======
+            // panPvPP1
+            // 
+            this.panPvPP1.Controls.Add(this.lblDrawnSticksP1PvPDesc);
+            this.panPvPP1.Controls.Add(this.lblDrawnSticksP1PvP);
+            this.panPvPP1.Controls.Add(this.lblP1NamePvP);
+            this.panPvPP1.Location = new System.Drawing.Point(3, 3);
+            this.panPvPP1.Name = "panPvPP1";
+            this.panPvPP1.Size = new System.Drawing.Size(242, 706);
+            this.panPvPP1.TabIndex = 8;
+>>>>>>> Stashed changes
             // 
             // lblDrawnSticksP1PvPDesc
             // 
@@ -378,7 +440,11 @@
             this.btnNim3PvP.TabIndex = 7;
             this.btnNim3PvP.Text = "Nim drei!";
             this.btnNim3PvP.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
             this.btnNim3PvP.Click += new System.EventHandler(this.btnNim3PvP_Click);
+=======
+            this.btnNim3PvP.Click += new System.EventHandler(this.butNimThreePvP_Click);
+>>>>>>> Stashed changes
             // 
             // btnNim2PvP
             // 
@@ -389,7 +455,11 @@
             this.btnNim2PvP.TabIndex = 6;
             this.btnNim2PvP.Text = "Nim zwei!";
             this.btnNim2PvP.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
             this.btnNim2PvP.Click += new System.EventHandler(this.btnNim2PvP_Click);
+=======
+            this.btnNim2PvP.Click += new System.EventHandler(this.butNimTwoPvP_Click);
+>>>>>>> Stashed changes
             // 
             // btnNim1PvP
             // 
@@ -400,7 +470,11 @@
             this.btnNim1PvP.TabIndex = 5;
             this.btnNim1PvP.Text = "Nim eins!";
             this.btnNim1PvP.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
             this.btnNim1PvP.Click += new System.EventHandler(this.btnNim1PvP_Click);
+=======
+            this.btnNim1PvP.Click += new System.EventHandler(this.butNimOnePvP_Click);
+>>>>>>> Stashed changes
             // 
             // lblStickCountPvP
             // 
@@ -470,6 +544,7 @@
             this.lblPlayer1NamePvCDataDesc.TabIndex = 5;
             this.lblPlayer1NamePvCDataDesc.Text = "Spieler 1:";
             // 
+<<<<<<< Updated upstream
             // tbPgGamePvC
             // 
             this.tbPgGamePvC.Controls.Add(this.lblStickCountPvCDesc);
@@ -651,6 +726,49 @@
             this.tbPgSettings.TabIndex = 8;
             this.tbPgSettings.Text = "Settings";
             this.tbPgSettings.UseVisualStyleBackColor = true;
+=======
+            // tabPgGamePvC
+            // 
+            this.tabPgGamePvC.Location = new System.Drawing.Point(4, 22);
+            this.tabPgGamePvC.Name = "tabPgGamePvC";
+            this.tabPgGamePvC.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPgGamePvC.Size = new System.Drawing.Size(984, 741);
+            this.tabPgGamePvC.TabIndex = 5;
+            this.tabPgGamePvC.Text = "PvC";
+            this.tabPgGamePvC.UseVisualStyleBackColor = true;
+            // 
+            // tabPgDataNetwork
+            // 
+            this.tabPgDataNetwork.Location = new System.Drawing.Point(4, 22);
+            this.tabPgDataNetwork.Name = "tabPgDataNetwork";
+            this.tabPgDataNetwork.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPgDataNetwork.Size = new System.Drawing.Size(984, 741);
+            this.tabPgDataNetwork.TabIndex = 6;
+            this.tabPgDataNetwork.Text = "Net-Data";
+            this.tabPgDataNetwork.UseVisualStyleBackColor = true;
+            // 
+            // tabPgNetwork
+            // 
+            this.tabPgNetwork.Location = new System.Drawing.Point(4, 22);
+            this.tabPgNetwork.Name = "tabPgNetwork";
+            this.tabPgNetwork.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPgNetwork.Size = new System.Drawing.Size(984, 741);
+            this.tabPgNetwork.TabIndex = 7;
+            this.tabPgNetwork.Text = "Network";
+            this.tabPgNetwork.UseVisualStyleBackColor = true;
+            // 
+            // tabPgSettings
+            // 
+            this.tabPgSettings.Controls.Add(this.lblStickCountSettingsDesc);
+            this.tabPgSettings.Controls.Add(this.numUDStickCountSettings);
+            this.tabPgSettings.Location = new System.Drawing.Point(4, 22);
+            this.tabPgSettings.Name = "tabPgSettings";
+            this.tabPgSettings.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPgSettings.Size = new System.Drawing.Size(984, 741);
+            this.tabPgSettings.TabIndex = 8;
+            this.tabPgSettings.Text = "Settings";
+            this.tabPgSettings.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // lblStickCountSettingsDesc
             // 
@@ -684,7 +802,10 @@
             // 
             // tbPgGameOver
             // 
+<<<<<<< Updated upstream
             this.tbPgGameOver.BackColor = System.Drawing.Color.Transparent;
+=======
+>>>>>>> Stashed changes
             this.tbPgGameOver.Controls.Add(this.lblWinner);
             this.tbPgGameOver.Controls.Add(this.btnBackToMainGameOver);
             this.tbPgGameOver.Location = new System.Drawing.Point(4, 22);
@@ -693,6 +814,10 @@
             this.tbPgGameOver.Size = new System.Drawing.Size(984, 741);
             this.tbPgGameOver.TabIndex = 9;
             this.tbPgGameOver.Text = "Game Over";
+<<<<<<< Updated upstream
+=======
+            this.tbPgGameOver.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // lblWinner
             // 
@@ -727,6 +852,7 @@
             this.tbPgGamePvP.PerformLayout();
             this.tbPgPvP.ResumeLayout(false);
             this.tbPgPvP.PerformLayout();
+<<<<<<< Updated upstream
             this.panP2PvP.ResumeLayout(false);
             this.panP2PvP.PerformLayout();
             this.panP1PvP.ResumeLayout(false);
@@ -740,6 +866,15 @@
             this.panP1PvC.ResumeLayout(false);
             this.panP1PvC.PerformLayout();
             this.tbPgSettings.ResumeLayout(false);
+=======
+            this.panPvPP2.ResumeLayout(false);
+            this.panPvPP2.PerformLayout();
+            this.panPvPP1.ResumeLayout(false);
+            this.panPvPP1.PerformLayout();
+            this.tbPgDataPvC.ResumeLayout(false);
+            this.tbPgDataPvC.PerformLayout();
+            this.tabPgSettings.ResumeLayout(false);
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).EndInit();
             this.tbPgGameOver.ResumeLayout(false);
             this.ResumeLayout(false);
