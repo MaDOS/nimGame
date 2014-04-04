@@ -13,6 +13,11 @@ namespace nimEngine.AI
 
     public class AI_intermediate : Player
     {
+        public override string ToString()
+        {
+            return "Mittel";
+        }
+
 		protected override int doTurn(int currentStickCount)
 		{
             Random rnd = new Random();

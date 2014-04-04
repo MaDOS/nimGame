@@ -14,6 +14,11 @@ namespace nimEngine.AI
 
     public class AI_easy : Player
     {
+        public override string ToString()
+        {
+            return "Leicht";
+        }
+
     	Random rnd = new Random();
 
         protected override int doTurn(int currentStickCount)

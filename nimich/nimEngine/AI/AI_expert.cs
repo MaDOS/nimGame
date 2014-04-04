@@ -13,6 +13,11 @@ namespace nimEngine.AI
 
     public class AI_expert : Player
     {
+        public override string ToString()
+        {
+            return "Experte";
+        }
+
 		protected override int doTurn(int currentStickCount)
 		{
 			Random rnd = new Random();

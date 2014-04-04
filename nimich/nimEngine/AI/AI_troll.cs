@@ -11,7 +11,7 @@ namespace nimEngine.AI
             * es werden ganzzahlige Werte zurückgegeben, um currentStickCount (generische Liste) zu bestimmen
             */
 
-    class AI_troll : Player
+    public class AI_troll : Player
     {
         Random rnd = new Random();
 
