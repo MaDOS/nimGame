@@ -11,32 +11,30 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
-        private void butStartComputer_Click(object sender, EventArgs e)
+        private void btnStartPvCMode_Click(object sender, EventArgs e)
         {
             //Spielerdatenblatt öffnen
-            tabMain.SelectedTab = tabPgDataPvC;
-            txtPvcComputer.Text = "Computer";
+            
         }
 
-        private void butStartPvc_Click(object sender, EventArgs e)
+        private void btnStartPvCGamePvCData_Click(object sender, EventArgs e)
         {
-            //PLayer vs. Computer
+            //Player vs. Computer
 
-            string player = txtPvcName.Text;
+            string player = txtPlayer1NamePvCData.Text;
             string message = "Spieler1: Bitte geben Sie ihren Namen ein!";
 
-            if (txtPvcName.Text == "")
+            if (txtPlayer1NamePvCData.Text == "")
             {
                 MessageBox.Show(message);
                 return;
             }
             else
             {
-                player = txtPvcName.Text;
+                player = txtPlayer1NamePvCData.Text;
             }
 
-            //Spielerdaten übernehmen
-            labPvcName.Text = player;
+            //TODO: Spielerdaten übernehmen
 
             //Öffnen des Spielfensters
             tabMain.SelectedTab = tabPgGamePvC;

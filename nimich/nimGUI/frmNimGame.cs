@@ -17,18 +17,18 @@ namespace nimGUI
             Form.CheckForIllegalCrossThreadCalls = false;
         }
 
-        private void butStartGame_Click(object sender, EventArgs e)
+        private void btnStartGameMain_Click(object sender, EventArgs e)
         {
             //Öffnen der Spielmodiauswahl
             tabMain.SelectedTab = tbPgGameMode;
         }
 
-        private void butSettings_Click(object sender, EventArgs e)
+        private void btnSettingsMain_Click(object sender, EventArgs e)
         {
             //Einstellungen Öffnen
         }
 
-        private void butHighscore_Click(object sender, EventArgs e)
+        private void btnHighscoreMain_Click(object sender, EventArgs e)
         {
             //Highscore öffnen
         }

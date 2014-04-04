@@ -34,6 +34,21 @@ namespace nimGUI
         //Sticks wurden verändert
         void g_stickCountChanged()
         {
+        	switch(g.StickCount)
+        	{
+        		case 2:
+        			this.butNimThreePvP.Enabled = false;
+        			break;
+        		case 1:         			
+        			this.butNimThreePvP.Enabled = false;
+        			this.butNimTwoPvP.Enabled = false;
+        			break;
+        		default:
+        			this.butNimTwoPvP.Enabled = true;
+        			this.butNimThreePvP.Enabled = true;
+        			break;
+        			
+        	}
             this.refreshSticks();
         }
 
@@ -42,7 +57,10 @@ namespace nimGUI
         {
             this.gameRunning = false;
             MessageBox.Show("Gewinner ist " + eventArgs.winner.ident);
-
+            
+			this.butNimOnePvP.Enabled = false;
+        	this.butNimTwoPvP.Enabled = false;
+        	this.butNimThreePvP.Enabled = false;
             //if (this.p1.ident == eventArgs.winner.ident)
             //{
             //    //spieler 1 ist gewinner
@@ -57,7 +75,7 @@ namespace nimGUI
 
         void refreshSticks()
         {
-        	this.labSticks.Text = this.g.StickCount.ToString();
+        	this.lblStickCountPvP.Text = this.g.StickCount.ToString();
         }
 
         void setp1Active()
@@ -84,12 +102,12 @@ namespace nimGUI
             if (p1Turn == true)
             {
                 this.drawnSticksP1 += stickCount;
-                this.labPvPP1TakenSticks.Text = this.drawnSticksP1.ToString();
+                this.lblDrawnSticksP1Pvp.Text = this.drawnSticksP1.ToString();
             }
             else
             {
                 this.drawnSticksP2 += stickCount;
-                this.labPvPP2TakenSticks.Text = this.drawnSticksP2.ToString();
+                this.lblDrawnSticksP2PvP.Text = this.drawnSticksP2.ToString();
             }
         }
 

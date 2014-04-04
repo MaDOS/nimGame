@@ -12,7 +12,7 @@ namespace nimGUI
 {
     public partial class frmNimGame : Form
     {          
-        void ButNimOneClick(object sender, EventArgs e)
+        void butNimOnePvP_Click(object sender, EventArgs e)
         {
         	if(p1Turn)
         	{
@@ -24,7 +24,7 @@ namespace nimGUI
         	}
         }
         
-        void ButNimTwoClick(object sender, EventArgs e)
+        void butNimTwoPvP_Click(object sender, EventArgs e)
         {
 
             if (p1Turn)
@@ -37,7 +37,7 @@ namespace nimGUI
             }
         }
         
-        void ButNimThreeClick(object sender, EventArgs e)
+        void butNimThreePvP_Click(object sender, EventArgs e)
         {
             if (p1Turn)
             {
@@ -48,7 +48,12 @@ namespace nimGUI
                 this.humanTakeSticks((Human)p2, 3);
             }
         }
-        #region
+        
+        #region helper
+        void resetControlsGamePvP()
+        {
+        	
+        }
         #endregion
     }
 }
