@@ -15,26 +15,17 @@ namespace nimGUI
 
         private void btnNim1PvC_Click(object sender, EventArgs e)
         {
-            if (p1TurnPvP)
-            {
-                this.humanTakeSticksPvC(1);
-            }
+            this.humanTakeSticksPvC(1);
         }
 
         private void btnNim2PvC_Click(object sender, EventArgs e)
         {
-            if (p1TurnPvP)
-            {
-                this.humanTakeSticksPvC(2);
-            }
+            this.humanTakeSticksPvC(2);
         }
 
         private void btnNim3PvC_Click(object sender, EventArgs e)
         {
-            if (p1TurnPvP)
-            {
-                this.humanTakeSticksPvC(3);
-            }
+            this.humanTakeSticksPvC(3);
         }
 
         #region helper
@@ -48,10 +39,18 @@ namespace nimGUI
 
             ((Human)p1).AmountNextTurn = stickCount;
             ((Human)p1).ReadyForTurn = true;
+        }
 
-
-            this.drawnSticksP1PvC += stickCount;
-            this.lblDrawnSticksP1PvC.Text = this.drawnSticksP1PvC.ToString();
+        void resetGamePvC()
+        {
+            this.btnNim1PvC.Enabled = true;
+            this.btnNim2PvC.Enabled = true;
+            this.btnNim3PvC.Enabled = true;
+            this.lblDrawnSticksP1PvC.Text = "0";
+            this.lblDrawnSticksP2PvC.Text = "0";
+            this.drawnSticksP1PvC = 0;
+            this.drawnSticksP2PvC = 0;
+            this.refreshSticksPvC();
         }
 
         #endregion

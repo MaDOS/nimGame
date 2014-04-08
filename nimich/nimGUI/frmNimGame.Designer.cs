@@ -679,24 +679,6 @@
             0,
             0});
             // 
-            // lblWinner
-            // 
-            this.lblWinner.Location = new System.Drawing.Point(12, 14);
-            this.lblWinner.Name = "lblWinner";
-            this.lblWinner.Size = new System.Drawing.Size(100, 23);
-            this.lblWinner.TabIndex = 1;
-            this.lblWinner.Text = "Gewinner:";
-            // 
-            // btnBackToMainGameOver
-            // 
-            this.btnBackToMainGameOver.Location = new System.Drawing.Point(6, 117);
-            this.btnBackToMainGameOver.Name = "btnBackToMainGameOver";
-            this.btnBackToMainGameOver.Size = new System.Drawing.Size(75, 23);
-            this.btnBackToMainGameOver.TabIndex = 0;
-            this.btnBackToMainGameOver.Text = "Hauptmenü";
-            this.btnBackToMainGameOver.UseVisualStyleBackColor = true;
-            this.btnBackToMainGameOver.Click += new System.EventHandler(this.BtnBackToMainGameOverClick);
-            // 
             // frmNimGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -705,6 +687,7 @@
             this.Controls.Add(this.tabMain);
             this.Name = "frmNimGame";
             this.Text = "nimGame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNimGame_FormClosing);
             this.tabMain.ResumeLayout(false);
             this.tbPgMain.ResumeLayout(false);
             this.tbPgGameMode.ResumeLayout(false);

@@ -59,17 +59,6 @@ namespace nimGUI
             }
             p.AmountNextTurn = stickCount;
             p.ReadyForTurn = true;
-
-            if (p1TurnPvP == true)
-            {
-                this.drawnSticksP1PvP += stickCount;
-                this.lblDrawnSticksP1PvP.Text = this.drawnSticksP1PvP.ToString();
-            }
-            else
-            {
-                this.drawnSticksP2PvP += stickCount;
-                this.lblDrawnSticksP2PvP.Text = this.drawnSticksP2PvP.ToString();
-            }
         }
 
         void resetGamePvP()

@@ -41,5 +41,9 @@ namespace nimGUI
         {
             //Highscore öffnen
         }
+
+        private void frmNimGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
     }
 }

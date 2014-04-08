@@ -37,20 +37,22 @@ namespace nimGUI
                 return;
             }
 
+            this.startStickCount = (int)this.numUDStickCountSettings.Value;
             this.p1 = new Human(playerName);
             this.p2 = (Player)this.cmbBxAIPvCData.SelectedItem;
-            this.g = new Game(this.p1, this.p2, (int)this.numUDStickCountSettings.Value);
+            this.g = new Game(this.p1, this.p2, this.startStickCount);
 
             //Übernehmen der Daten
             lblP1NamePvC.Text = this.p1.ident;
             lblP2NamePvC.Text = this.p2.ToString();
 
-            this.g.gameOver += this.g_gameOverPvP;
+            this.g.gameOver += this.g_gameOverPvC;
             this.g.stickCountChanged += this.g_stickCountChangedPvC;
             this.p1.playerStartedTurn += this.p1_playerStartedTurnPvC;
             this.p2.playerStartedTurn += this.p2_playerStartedTurnPvC;
 
             //Öffnen des Spielfensters
+            this.resetGamePvC();
             tabMain.SelectedTab = this.tbPgGamePvC;
             this.g.start();
             this.gameRunning = true;
