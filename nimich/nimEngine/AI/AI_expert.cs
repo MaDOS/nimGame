@@ -13,9 +13,16 @@ namespace nimEngine.AI
 
     public class AI_expert : Player
     {
+        private string name = "Expert";
+
+        public AI_expert()
+        {
+            this.ident = name;
+        }
+
         public override string ToString()
         {
-            return "Experte";
+            return name;
         }
 
 		protected override int doTurn(int currentStickCount)

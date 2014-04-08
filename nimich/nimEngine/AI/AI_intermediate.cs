@@ -13,9 +13,16 @@ namespace nimEngine.AI
 
     public class AI_intermediate : Player
     {
+        private string name = "Mittel";
+
+        public AI_intermediate()
+        {
+            this.ident = name;
+        }
+
         public override string ToString()
         {
-            return "Mittel";
+            return name;
         }
 
 		protected override int doTurn(int currentStickCount)

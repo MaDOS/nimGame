@@ -15,11 +15,24 @@ namespace nimEngine.AI
     {
         Random rnd = new Random();
 
-        public override string ToString()
+        private string name;
+
+        public AI_troll()
+        {
+            this.name = genName();
+            this.ident = name;
+        }
+
+        private string genName()
         {
             byte[] rBytes = new byte[15];
             rnd.NextBytes(rBytes);
             return BitConverter.ToString(rBytes);
+        }
+
+        public override string ToString()
+        {
+            return name;
         }
 
         protected override int doTurn(int currentStickCount)
@@ -68,11 +81,27 @@ namespace nimEngine.AI
             {
                 if (currentStickCount == 5)
                 {
-                    return 3;
+                    if (rnd.Next(10) >= 5)
+                    {
+                        return 3;
+                    }
+                    else
+                    {
+                        return -2;
+                    }
+                    
                 }
                 else if (currentStickCount == 4)
                 {
-                    return 2;
+                    if (rnd.Next(10) >= 5)
+                    {
+                        return 2;
+                    }
+
+                    else
+                    {
+                        return -3;
+                    }
                 }
 
                 else if (currentStickCount == 3)
@@ -82,7 +111,15 @@ namespace nimEngine.AI
 
                 else if (currentStickCount == 2)
                 {
-                    return -2;
+                    if (rnd.Next(10) >= 5)
+                    {
+                        return -1;
+                    }
+
+                    else
+                    {
+                        return -3;
+                    }
                 }
 
                 else if (currentStickCount == 1)

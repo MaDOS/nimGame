@@ -14,9 +14,16 @@ namespace nimEngine.AI
 
     public class AI_easy : Player
     {
+        private string name = "Leicht";
+
+        public AI_easy()
+        {
+            this.ident = name;
+        }
+
         public override string ToString()
         {
-            return "Leicht";
+            return name;
         }
 
     	Random rnd = new Random();

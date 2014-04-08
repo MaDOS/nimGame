@@ -13,9 +13,16 @@ namespace nimEngine.AI
 
     public class AI_hard : Player
     {
+        private string name = "Schwer";
+
+        public AI_hard()
+        {
+            this.ident = name;
+        }
+
         public override string ToString()
         {
-            return "Schwer";
+            return name;
         }
 
 		protected override int doTurn(int currentStickCount)
