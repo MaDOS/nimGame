@@ -17,7 +17,7 @@ namespace nimEngine
         /*!
  		 *	Ausgelöst wenn ein Spieler die Hölzchenanzahl verändert
     	 */
-        public delegate void stickCountChangedEventHandler();
+        public delegate void stickCountChangedEventHandler(StickCountChangedEventArgs eventArgs);
         public event stickCountChangedEventHandler stickCountChanged;
 
         /*! 
@@ -34,6 +34,9 @@ namespace nimEngine
         private Stack<Stick> sticks;
         private Player player1;
         private Player player2;
+
+        private Random rnd = new Random();
+        private bool p1Starts = false;
 
         public Game(Player player1, Player player2, int stickCount)
         {
@@ -52,6 +55,14 @@ namespace nimEngine
         public void start()
         {
         	Thread gameThread = new Thread(new ThreadStart(run));
+            if (rnd.Next(0, 101) % 50 > 1)
+            {
+                this.p1Starts = true;
+            }
+            else
+            {
+                this.p1Starts = false;
+            }
         	gameThread.Start();
         }
         
@@ -62,28 +73,58 @@ namespace nimEngine
          */
         private void run()
         {
-        	while(true)
-        	{
-        		this.takeSticks(player1.Turn(this.StickCount));
-        		if(this.StickCount == 0)
-        		{
-        			//Player 1 lost
-        			Console.WriteLine("Player 1 lost");
+            if (p1Starts)
+            {
+                while (true)
+                {
+                    this.takeSticks(player1.Turn(this.StickCount));
+                    if (this.StickCount == 0)
+                    {
+                        //Player 1 lost
+                        Console.WriteLine("Player 1 lost");
 
-                    this.gameOver(new GameOverEventArgs(this.player2, this.player1));
-        			break;
-        		}
-        		
-        		this.takeSticks(player2.Turn(this.StickCount));
-        		if(this.StickCount == 0)
-        		{
-        			//Player 2 lost
-        			Console.WriteLine("Player 2 lost");
+                        this.gameOver(new GameOverEventArgs(this.player2, this.player1));
+                        break;
+                    }
 
-                    this.gameOver(new GameOverEventArgs(this.player1, this.player2));
-        			break;
-        		}
-        	}
+                    this.takeSticks(player2.Turn(this.StickCount));
+                    if (this.StickCount == 0)
+                    {
+                        //Player 2 lost
+                        Console.WriteLine("Player 2 lost");
+
+                        this.gameOver(new GameOverEventArgs(this.player1, this.player2));
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                while (true)
+                {                    
+                    this.takeSticks(player2.Turn(this.StickCount));
+                    if (this.StickCount == 0)
+                    {
+                        //Player 2 lost
+                        Console.WriteLine("Player 2 lost");
+
+                        this.gameOver(new GameOverEventArgs(this.player1, this.player2));
+                        break;
+                    }
+
+                    this.takeSticks(player1.Turn(this.StickCount));
+                    if (this.StickCount == 0)
+                    {
+                        //Player 1 lost
+                        Console.WriteLine("Player 1 lost");
+
+                        this.gameOver(new GameOverEventArgs(this.player2, this.player1));
+                        break;
+                    }
+                }
+            }
+        	
+            Thread.CurrentThread.Abort();
         }
         
         private void takeSticks(int count)
@@ -102,7 +143,7 @@ namespace nimEngine
                     this.sticks.Push(new Stick());
                 }
             }
-            this.stickCountChanged();
+            this.stickCountChanged(new StickCountChangedEventArgs(count));
         }
     }
 
@@ -120,6 +161,19 @@ namespace nimEngine
             this.loser = loser;
         }
     }
-    
+
+    /*!
+     * Enthält Hölzchendifferenz
+     */
+    public class StickCountChangedEventArgs : EventArgs
+    {
+        public int Diff
+        { get; set; }
+
+        public StickCountChangedEventArgs(int diff)
+        {
+            this.Diff = diff;
+        }
+    }
    
 }
