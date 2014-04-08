@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "",
+            "1",
+            "Testspieler",
+            "5",
+            "2"}, -1);
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tbPgMain = new System.Windows.Forms.TabPage();
             this.btnHighscoreMain = new System.Windows.Forms.Button();
@@ -82,6 +88,12 @@
             this.tbPgSettings = new System.Windows.Forms.TabPage();
             this.lblStickCountSettingsDesc = new System.Windows.Forms.Label();
             this.numUDStickCountSettings = new System.Windows.Forms.NumericUpDown();
+            this.tbPgHighscore = new System.Windows.Forms.TabPage();
+            this.lstViewHighscores = new System.Windows.Forms.ListView();
+            this.colHdPlace = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colHdPlayerName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colHdWon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colHdLost = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblWinner = new System.Windows.Forms.Label();
             this.btnBackToMainGameOver = new System.Windows.Forms.Button();
             this.tabMain.SuspendLayout();
@@ -97,6 +109,7 @@
             this.panP1PvC.SuspendLayout();
             this.tbPgSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).BeginInit();
+            this.tbPgHighscore.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -110,11 +123,13 @@
             this.tabMain.Controls.Add(this.tbPgDataNetwork);
             this.tabMain.Controls.Add(this.tbPgNetwork);
             this.tabMain.Controls.Add(this.tbPgSettings);
+            this.tabMain.Controls.Add(this.tbPgHighscore);
             this.tabMain.Location = new System.Drawing.Point(-4, -1);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 0;
             this.tabMain.Size = new System.Drawing.Size(992, 767);
             this.tabMain.TabIndex = 0;
+            this.tabMain.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabMain_Selecting);
             // 
             // tbPgMain
             // 
@@ -679,6 +694,67 @@
             0,
             0});
             // 
+            // tbPgHighscore
+            // 
+            this.tbPgHighscore.Controls.Add(this.lstViewHighscores);
+            this.tbPgHighscore.Location = new System.Drawing.Point(4, 22);
+            this.tbPgHighscore.Name = "tbPgHighscore";
+            this.tbPgHighscore.Padding = new System.Windows.Forms.Padding(3);
+            this.tbPgHighscore.Size = new System.Drawing.Size(984, 741);
+            this.tbPgHighscore.TabIndex = 9;
+            this.tbPgHighscore.Text = "Highscore";
+            this.tbPgHighscore.UseVisualStyleBackColor = true;
+            // 
+            // lstViewHighscores
+            // 
+            this.lstViewHighscores.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colHdPlace,
+            this.colHdPlayerName,
+            this.colHdWon,
+            this.colHdLost});
+            this.lstViewHighscores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstViewHighscores.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.lstViewHighscores.Location = new System.Drawing.Point(3, 3);
+            this.lstViewHighscores.Name = "lstViewHighscores";
+            this.lstViewHighscores.Size = new System.Drawing.Size(978, 735);
+            this.lstViewHighscores.TabIndex = 0;
+            this.lstViewHighscores.UseCompatibleStateImageBehavior = false;
+            this.lstViewHighscores.View = System.Windows.Forms.View.Details;
+            // 
+            // colHdPlace
+            // 
+            this.colHdPlace.Text = "Platz";
+            // 
+            // colHdPlayerName
+            // 
+            this.colHdPlayerName.Text = "Spielername";
+            this.colHdPlayerName.Width = 500;
+            // 
+            // colHdWon
+            // 
+            this.colHdWon.Text = "Gewonnen";
+            this.colHdWon.Width = 120;
+            // 
+            // colHdLost
+            // 
+            this.colHdLost.Text = "Verloren";
+            this.colHdLost.Width = 120;
+            // 
+            // lblWinner
+            // 
+            this.lblWinner.Location = new System.Drawing.Point(0, 0);
+            this.lblWinner.Name = "lblWinner";
+            this.lblWinner.Size = new System.Drawing.Size(100, 23);
+            this.lblWinner.TabIndex = 0;
+            // 
+            // btnBackToMainGameOver
+            // 
+            this.btnBackToMainGameOver.Location = new System.Drawing.Point(0, 0);
+            this.btnBackToMainGameOver.Name = "btnBackToMainGameOver";
+            this.btnBackToMainGameOver.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainGameOver.TabIndex = 0;
+            // 
             // frmNimGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,6 +764,7 @@
             this.Name = "frmNimGame";
             this.Text = "nimGame";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNimGame_FormClosing);
+            this.Load += new System.EventHandler(this.frmNimGame_Load);
             this.tabMain.ResumeLayout(false);
             this.tbPgMain.ResumeLayout(false);
             this.tbPgGameMode.ResumeLayout(false);
@@ -709,6 +786,7 @@
             this.panP1PvC.PerformLayout();
             this.tbPgSettings.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numUDStickCountSettings)).EndInit();
+            this.tbPgHighscore.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -771,6 +849,12 @@
         private System.Windows.Forms.Button btnNim2PvC;
         private System.Windows.Forms.Button btnNim1PvC;
         private System.Windows.Forms.Label lblStickCountPvC;
+        private System.Windows.Forms.TabPage tbPgHighscore;
+        private System.Windows.Forms.ListView lstViewHighscores;
+        private System.Windows.Forms.ColumnHeader colHdPlace;
+        private System.Windows.Forms.ColumnHeader colHdPlayerName;
+        private System.Windows.Forms.ColumnHeader colHdWon;
+        private System.Windows.Forms.ColumnHeader colHdLost;
         
     }
 }

@@ -29,3 +29,16 @@ C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csprojR
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csproj.GenerateResource.Cache
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimGUI.exe
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimGUI.pdb
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.dll
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\Serializer.dll
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.pdb
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\Serializer.pdb

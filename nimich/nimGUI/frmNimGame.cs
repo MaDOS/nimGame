@@ -44,6 +44,15 @@ namespace nimGUI
 
         private void frmNimGame_FormClosing(object sender, FormClosingEventArgs e)
         {
+            MessageBox.Show("");
+            Highscoremanager.save();
         }
+
+        private void frmNimGame_Load(object sender, EventArgs e)
+        {
+            Highscoremanager.load();
+
+        }
+
     }
 }

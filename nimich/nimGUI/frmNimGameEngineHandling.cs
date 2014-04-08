@@ -68,8 +68,16 @@ namespace nimGUI
         //Spiel vorbei
         void g_gameOverPvP(nimEngine.GameOverEventArgs eventArgs)
         {
-            this.gameRunning = false;
+            gameRunning = false;
+            string winner = eventArgs.winner.ident;
+            string loser = eventArgs.loser.ident;
+
             MessageBox.Show(eventArgs.winner.ident + " hat gewonnen!");
+
+            Highscoremanager.addWin(winner);
+            Highscoremanager.addLose(loser);
+
+            this.tabMain.SelectedTab = this.tbPgMain;
         }
 
             #region helper
@@ -149,7 +157,15 @@ namespace nimGUI
         void g_gameOverPvC(nimEngine.GameOverEventArgs eventArgs)
         {
             gameRunning = false;
+            string winner = eventArgs.winner.ident;
+            string loser = eventArgs.loser.ident;
+
             MessageBox.Show(eventArgs.winner.ident + " hat gewonnen!");
+
+            Highscoremanager.addWin(winner);
+            Highscoremanager.addLose(loser);
+
+            this.tabMain.SelectedTab = this.tbPgMain;
         }
 
             #region helper

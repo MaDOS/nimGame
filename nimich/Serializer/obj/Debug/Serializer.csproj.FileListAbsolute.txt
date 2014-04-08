@@ -11,3 +11,8 @@ C:\Users\Schüler\Desktop\nimGame\nimich\Serializer\bin\Debug\Serializer.dll
 C:\Users\Schüler\Desktop\nimGame\nimich\Serializer\bin\Debug\Serializer.pdb
 C:\Users\Schüler\Desktop\nimGame\nimich\Serializer\obj\Debug\Serializer.dll
 C:\Users\Schüler\Desktop\nimGame\nimich\Serializer\obj\Debug\Serializer.pdb
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\Serializer\bin\Debug\Serializer.dll
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\Serializer\bin\Debug\Serializer.pdb
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\Serializer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\Serializer\obj\Debug\Serializer.dll
+C:\Users\schueler.A109-17\Desktop\nimGame\nimich\Serializer\obj\Debug\Serializer.pdb

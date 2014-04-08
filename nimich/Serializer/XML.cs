@@ -7,7 +7,7 @@ using System.IO;
 
 namespace serializer
 {
-    public class serializer
+    public class XMLserializer
     {
         public string Path
         {
@@ -15,15 +15,16 @@ namespace serializer
             private set;
         }
 
-        public serializer(string path)
+        public XMLserializer(string path)
         {
             this.Path = path;
         }
 
-        public void SerializeL<T>(T thing)
+        public void Serialize<T>(T thing)
         {
             //Neuer Serialisierer; typeof T = egal welcher Typ
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            XmlSerializer serializer;
+            serializer = new XmlSerializer(typeof(T));
 
             //Neuer Filestream; StartupPath = Projektpfad; \\Typ.xml = Name der Datei
             FileStream file = new FileStream(this.Path, FileMode.Create);
@@ -32,7 +33,7 @@ namespace serializer
             file.Close();
         }
 
-        public T DeserializeXmlToBlog<T>()
+        public T Deserialize<T>()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
             FileStream file = new FileStream(this.Path, FileMode.Open);
