@@ -60,8 +60,7 @@ namespace nimGUI
         void g_gameOverPvP(nimEngine.GameOverEventArgs eventArgs)
         {
             this.gameRunning = false;
-            this.lblWinner.Text = "Gewinner: " + eventArgs.winner.ident;
-            this.tabMain.SelectedTab = this.tbPgGameOver;
+            MessageBox.Show(eventArgs.winner.ident);
 
             this.btnNim1PvP.Enabled = false;
             this.btnNim2PvP.Enabled = false;
@@ -130,14 +129,14 @@ namespace nimGUI
 
             void setp1ActivePvC()
             {
-                this.panP1PvP.BackColor = Color.LimeGreen;
-                this.panP2PvP.BackColor = Color.Transparent;
+                this.panP1PvC.BackColor = Color.LimeGreen;
+                this.panP2PvC.BackColor = Color.Transparent;
             }
 
             void setp2ActivePvC()
             {
-                this.panP2PvP.BackColor = Color.LimeGreen;
-                this.panP1PvP.BackColor = Color.Transparent;
+                this.panP2PvC.BackColor = Color.LimeGreen;
+                this.panP1PvC.BackColor = Color.Transparent;
             }
 
             #endregion

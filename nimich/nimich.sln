@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+# SharpDevelop 4.2.0.8783
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nimEngine", "nimEngine\nimEngine.csproj", "{BF80902C-42BF-43C6-BE5E-2063197E3163}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nimGUI", "nimGUI\nimGUI.csproj", "{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}"
@@ -47,6 +48,8 @@ Global
 		{EF41A815-E586-4CF8-A3C8-10EE6D8CBEE7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{EF41A815-E586-4CF8-A3C8-10EE6D8CBEE7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EF41A815-E586-4CF8-A3C8-10EE6D8CBEE7}.Release|x86.ActiveCfg = Release|Any CPU
+		{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFCDDF3-E87C-4496-AC00-F3189E62B65B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
