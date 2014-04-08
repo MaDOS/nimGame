@@ -42,8 +42,8 @@ namespace nimGUI
             this.g = new Game(this.p1, this.p2, (int)this.numUDStickCountSettings.Value);
 
             //Übernehmen der Daten
-            lblP1NamePvP.Text = this.p1.ident;
-            lblP2NamePvP.Text = this.p2.ToString();
+            lblP1NamePvC.Text = this.p1.ident;
+            lblP2NamePvC.Text = this.p2.ToString();
 
             this.g.gameOver += this.g_gameOverPvP;
             this.g.stickCountChanged += this.g_stickCountChangedPvC;
