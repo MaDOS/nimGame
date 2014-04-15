@@ -89,6 +89,7 @@
         	this.colHsLost = new System.Windows.Forms.ColumnHeader();
         	this.lblWinner = new System.Windows.Forms.Label();
         	this.btnBackToMainGameOver = new System.Windows.Forms.Button();
+        	this.colWPL = new System.Windows.Forms.ColumnHeader();
         	this.tabMain.SuspendLayout();
         	this.tbPgMain.SuspendLayout();
         	this.tbPgGameMode.SuspendLayout();
@@ -703,7 +704,8 @@
         	this.lstViewHighscores.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
         	        	        	this.colHsPlayerName,
         	        	        	this.colHsWon,
-        	        	        	this.colHsLost});
+        	        	        	this.colHsLost,
+        	        	        	this.colWPL});
         	this.lstViewHighscores.Dock = System.Windows.Forms.DockStyle.Fill;
         	this.lstViewHighscores.Location = new System.Drawing.Point(3, 3);
         	this.lstViewHighscores.Name = "lstViewHighscores";
@@ -741,6 +743,10 @@
         	this.btnBackToMainGameOver.Size = new System.Drawing.Size(75, 23);
         	this.btnBackToMainGameOver.TabIndex = 0;
         	// 
+        	// colWPL
+        	// 
+        	this.colWPL.Text = "Gewonnen / Verloren";
+        	// 
         	// frmNimGame
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,6 +781,7 @@
         	this.tbPgHighscore.ResumeLayout(false);
         	this.ResumeLayout(false);
         }
+        private System.Windows.Forms.ColumnHeader colWPL;
         private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.Button btnBackToMainGameOver;
         private System.Windows.Forms.ComboBox cmbBxAIPvCData;

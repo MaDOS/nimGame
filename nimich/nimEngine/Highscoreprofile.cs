@@ -25,6 +25,18 @@ namespace nimEngine
             get;
             set;
         }
+        
+        public float WonPerLost
+        {
+        	get
+        	{
+        		if(Lost == 0)
+        		{
+        			return Won;
+        		}
+        		return Won / Lost;
+        	}
+        }
 
         public Highscoreprofile()
         {
