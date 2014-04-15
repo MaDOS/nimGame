@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,12 +23,12 @@ namespace serializer
 
         public void Serialize<T>(T thing)
         {
-            //Neuer Serialisierer; typeof T = egal welcher Typ
+            //Neuer Serialisierer;
             XmlSerializer serializer;
             serializer = new XmlSerializer(typeof(T));
 
             //Neuer Filestream; StartupPath = Projektpfad; \\Typ.xml = Name der Datei
-            FileStream file = new FileStream(this.Path, FileMode.Create);
+            FileStream file = new FileStream(this.Path, FileMode.OpenOrCreate);
 
             serializer.Serialize(file, thing);
             file.Close();
@@ -36,7 +37,7 @@ namespace serializer
         public T Deserialize<T>()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
-            FileStream file = new FileStream(this.Path, FileMode.Open);
+            FileStream file = new FileStream(this.Path, FileMode.OpenOrCreate);
             T thing = (T)serializer.Deserialize(file);
             file.Close();
 

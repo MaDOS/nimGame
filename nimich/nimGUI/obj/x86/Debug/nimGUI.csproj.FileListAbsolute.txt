@@ -42,3 +42,5 @@ C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.dll
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\Serializer.dll
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.pdb
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\Serializer.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.dll
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.pdb

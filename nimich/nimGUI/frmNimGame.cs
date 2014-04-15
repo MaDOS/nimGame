@@ -40,18 +40,17 @@ namespace nimGUI
         private void btnHighscoreMain_Click(object sender, EventArgs e)
         {
             //Highscore öffnen
+            tabMain.SelectedTab = this.tbPgHighscore;
         }
 
         private void frmNimGame_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show("");
             Highscoremanager.save();
         }
 
         private void frmNimGame_Load(object sender, EventArgs e)
         {
             Highscoremanager.load();
-
         }
 
     }

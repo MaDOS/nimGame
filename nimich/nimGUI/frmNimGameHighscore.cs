@@ -14,6 +14,7 @@ namespace nimGUI
     {
         private void tabMain_Selecting(object sender, TabControlCancelEventArgs e)
         {
+        	this.lstViewHighscores.Items.Clear();
             foreach (Highscoreprofile hsp in Highscoremanager.highscoreProfiles.Values)
             {
                 this.lstViewHighscores.Items.Add(new ListViewItem( new string[]{hsp.Playername, hsp.Won.ToString(), hsp.Lost.ToString()} ));

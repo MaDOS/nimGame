@@ -77,7 +77,7 @@ namespace nimGUI
             Highscoremanager.addWin(winner);
             Highscoremanager.addLose(loser);
 
-            this.tabMain.SelectedTab = this.tbPgMain;
+            this.tabMain.SelectedTab = this.tbPgHighscore;
         }
 
             #region helper
@@ -165,7 +165,7 @@ namespace nimGUI
             Highscoremanager.addWin(winner);
             Highscoremanager.addLose(loser);
 
-            this.tabMain.SelectedTab = this.tbPgMain;
+            this.tabMain.SelectedTab = this.tbPgHighscore;
         }
 
             #region helper

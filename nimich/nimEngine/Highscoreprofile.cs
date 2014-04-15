@@ -26,11 +26,17 @@ namespace nimEngine
             set;
         }
 
-        public Highscoreprofile(string playername)
+        public Highscoreprofile()
         {
-            this.Playername = playername;
+            this.Playername = "";
             this.Lost = 0;
             this.Won = 0;
         }
+        
+        public override string ToString()
+		{
+			return string.Format("[Highscoreprofile Playername={0}, Lost={1}, Won={2}]", Playername, Lost, Won);
+		}
+
     }
 }

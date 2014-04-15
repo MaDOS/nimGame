@@ -32,3 +32,5 @@ C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\bin\Debug\Serializer.
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.dll
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.dll
+C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.pdb
