@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using System.Text;
 
 namespace nimEngine
@@ -30,11 +31,16 @@ namespace nimEngine
         {
         	get
         	{
+        		float val;
         		if(Lost == 0)
         		{
-        			return Won;
+        			val = Won;
         		}
-        		return Won / Lost;
+        		else
+        		{
+        			val = ((float)Won / (float)Lost);
+        		}        			       
+        		return val;
         	}
         }
 

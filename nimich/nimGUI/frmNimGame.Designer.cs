@@ -87,9 +87,9 @@
         	this.colHsPlayerName = new System.Windows.Forms.ColumnHeader();
         	this.colHsWon = new System.Windows.Forms.ColumnHeader();
         	this.colHsLost = new System.Windows.Forms.ColumnHeader();
+        	this.colWPL = new System.Windows.Forms.ColumnHeader();
         	this.lblWinner = new System.Windows.Forms.Label();
         	this.btnBackToMainGameOver = new System.Windows.Forms.Button();
-        	this.colWPL = new System.Windows.Forms.ColumnHeader();
         	this.tabMain.SuspendLayout();
         	this.tbPgMain.SuspendLayout();
         	this.tbPgGameMode.SuspendLayout();
@@ -729,6 +729,11 @@
         	this.colHsLost.Text = "Verloren";
         	this.colHsLost.Width = 120;
         	// 
+        	// colWPL
+        	// 
+        	this.colWPL.Text = "Gewonnen / Verloren";
+        	this.colWPL.Width = 120;
+        	// 
         	// lblWinner
         	// 
         	this.lblWinner.Location = new System.Drawing.Point(0, 0);
@@ -742,10 +747,6 @@
         	this.btnBackToMainGameOver.Name = "btnBackToMainGameOver";
         	this.btnBackToMainGameOver.Size = new System.Drawing.Size(75, 23);
         	this.btnBackToMainGameOver.TabIndex = 0;
-        	// 
-        	// colWPL
-        	// 
-        	this.colWPL.Text = "Gewonnen / Verloren";
         	// 
         	// frmNimGame
         	// 
