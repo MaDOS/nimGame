@@ -771,7 +771,7 @@
             this.lstViewHighscores.Dock = System.Windows.Forms.DockStyle.Top;
             this.lstViewHighscores.Location = new System.Drawing.Point(3, 3);
             this.lstViewHighscores.Name = "lstViewHighscores";
-            this.lstViewHighscores.Size = new System.Drawing.Size(970, 571);
+            this.lstViewHighscores.Size = new System.Drawing.Size(970, 682);
             this.lstViewHighscores.TabIndex = 0;
             this.lstViewHighscores.UseCompatibleStateImageBehavior = false;
             this.lstViewHighscores.View = System.Windows.Forms.View.Details;
