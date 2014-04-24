@@ -34,3 +34,5 @@ C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.d
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.dll
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.dll
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.pdb

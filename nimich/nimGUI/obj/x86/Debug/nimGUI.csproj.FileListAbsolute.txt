@@ -44,3 +44,15 @@ C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\nimEngine.pdb
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimGUI\bin\Debug\Serializer.pdb
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.dll
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.exe
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.exe
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\nimGUI.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.dll
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.dll
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\nimEngine.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\bin\Debug\Serializer.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csprojResolveAssemblyReference.cache
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.frmNimGame.resources
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.Properties.Resources.resources
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimGUI\obj\x86\Debug\nimGUI.csproj.GenerateResource.Cache
