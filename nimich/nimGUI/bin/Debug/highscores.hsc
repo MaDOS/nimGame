@@ -2,13 +2,13 @@
 <ArrayOfHighscoreprofile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Highscoreprofile>
     <Playername>p1</Playername>
-    <Lost>7</Lost>
-    <Won>4</Won>
+    <Lost>15</Lost>
+    <Won>5</Won>
   </Highscoreprofile>
   <Highscoreprofile>
     <Playername>p2</Playername>
-    <Lost>3</Lost>
-    <Won>7</Won>
+    <Lost>4</Lost>
+    <Won>15</Won>
   </Highscoreprofile>
   <Highscoreprofile>
     <Playername>Mittel</Playername>

@@ -51,9 +51,8 @@ namespace nimGUI
         private void frmNimGame_Load(object sender, EventArgs e)
         {
             //this.tabMain.Size = new Size(984, 743); //Tableiste Sichtbar
-            //this.tabMain.Size = new Size(984, 764); //Tableiste unsichtbar
+            this.tabMain.Size = new Size(984, 764); //Tableiste unsichtbar
             Highscoremanager.load();
         }
-
     }
 }

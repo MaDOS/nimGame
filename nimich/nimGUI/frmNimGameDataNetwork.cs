@@ -11,10 +11,5 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
-        private void btnStartNetMode_Click(object sender, EventArgs e)
-        {
-            //Spielerdatenblatt öffnen
-            tabMain.SelectedTab = tbPgDataNetwork;
-        }
     }
 }

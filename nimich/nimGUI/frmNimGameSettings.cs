@@ -12,5 +12,9 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
+        private void btnBackToMainSettings_Click(object sender, EventArgs e)
+        {
+            this.tabMain.SelectedTab = this.tbPgMain;
+        }
 	}
 }

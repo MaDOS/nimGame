@@ -12,13 +12,21 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
-        private void tabMain_Selecting(object sender, TabControlCancelEventArgs e)
+        private void tabMain_SelectedIndexChanged(object sender, EventArgs e)
         {
-        	this.lstViewHighscores.Items.Clear();
-            foreach (Highscoreprofile hsp in Highscoremanager.highscoreProfiles.Values)
+            if (this.tabMain.SelectedTab == this.tbPgHighscore)
             {
-            	this.lstViewHighscores.Items.Add(new ListViewItem( new string[]{hsp.Playername, hsp.Won.ToString(), hsp.Lost.ToString(), hsp.WonPerLost.ToString()} ));
+                this.lstViewHighscores.Items.Clear();
+                foreach (Highscoreprofile hsp in Highscoremanager.highscoreProfiles.Values)
+                {
+                    this.lstViewHighscores.Items.Add(new ListViewItem(new string[] { hsp.Playername, hsp.Won.ToString(), hsp.Lost.ToString(), hsp.WonPerLost.ToString() }));
+                }
             }
+        }
+
+        private void btnBacktoMainHighscore_Click(object sender, EventArgs e)
+        {
+            this.tabMain.SelectedTab = this.tbPgMain;
         }
     }
 }

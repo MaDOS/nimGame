@@ -12,12 +12,6 @@ namespace nimGUI
 {
     public partial class frmNimGame
     {
-        private void btnStartPvCMode_Click(object sender, EventArgs e)
-        {
-            //Spielerdatenblatt öffnen
-            this.tabMain.SelectedTab = this.tbPgDataPvC;
-        }
-
         private void btnStartPvCGamePvCData_Click(object sender, EventArgs e)
         {
             //Player vs. Computer
@@ -60,6 +54,11 @@ namespace nimGUI
 
             this.lblDrawnSticksP1PvC.Text = drawnSticksP1PvC.ToString();
             this.lblDrawnSticksP2PvC.Text = drawnSticksP2PvC.ToString();
+        }
+
+        private void btnBackToModePvC_Click(object sender, EventArgs e)
+        {
+            this.tabMain.SelectedTab = this.tbPgGameMode;
         }
     }
 }

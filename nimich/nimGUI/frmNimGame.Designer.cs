@@ -34,10 +34,12 @@
             this.btnSettingsMain = new System.Windows.Forms.Button();
             this.btnStartGameMain = new System.Windows.Forms.Button();
             this.tbPgGameMode = new System.Windows.Forms.TabPage();
+            this.btnBackToMainMode = new System.Windows.Forms.Button();
             this.btnStartNetMode = new System.Windows.Forms.Button();
             this.btnStartPvCMode = new System.Windows.Forms.Button();
             this.btnStartPvPMode = new System.Windows.Forms.Button();
             this.tbPgGamePvP = new System.Windows.Forms.TabPage();
+            this.btnBackToModePvPData = new System.Windows.Forms.Button();
             this.btnStartPvPGamePvPData = new System.Windows.Forms.Button();
             this.txtPlayerName2PvPData = new System.Windows.Forms.TextBox();
             this.lblPlayer2NamePvPDataDesc = new System.Windows.Forms.Label();
@@ -58,6 +60,7 @@
             this.btnNim1PvP = new System.Windows.Forms.Button();
             this.lblStickCountPvP = new System.Windows.Forms.Label();
             this.tbPgDataPvC = new System.Windows.Forms.TabPage();
+            this.btnBackToModePvC = new System.Windows.Forms.Button();
             this.cmbBxAIPvCData = new System.Windows.Forms.ComboBox();
             this.btnStartPvCGamePvCData = new System.Windows.Forms.Button();
             this.lblPlayer2NamePvCDataDesc = new System.Windows.Forms.Label();
@@ -80,9 +83,11 @@
             this.tbPgDataNetwork = new System.Windows.Forms.TabPage();
             this.tbPgNetwork = new System.Windows.Forms.TabPage();
             this.tbPgSettings = new System.Windows.Forms.TabPage();
+            this.btnBackToMainSettings = new System.Windows.Forms.Button();
             this.lblStickCountSettingsDesc = new System.Windows.Forms.Label();
             this.numUDStickCountSettings = new System.Windows.Forms.NumericUpDown();
             this.tbPgHighscore = new System.Windows.Forms.TabPage();
+            this.btnBacktoMainHighscore = new System.Windows.Forms.Button();
             this.lstViewHighscores = new System.Windows.Forms.ListView();
             this.colHsPlayerName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colHsWon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -124,7 +129,7 @@
             this.tabMain.SelectedIndex = 0;
             this.tabMain.Size = new System.Drawing.Size(984, 743);
             this.tabMain.TabIndex = 0;
-            this.tabMain.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabMain_Selecting);
+            this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
             // 
             // tbPgMain
             // 
@@ -171,19 +176,31 @@
             // 
             // tbPgGameMode
             // 
+            this.tbPgGameMode.Controls.Add(this.btnBackToMainMode);
             this.tbPgGameMode.Controls.Add(this.btnStartNetMode);
             this.tbPgGameMode.Controls.Add(this.btnStartPvCMode);
             this.tbPgGameMode.Controls.Add(this.btnStartPvPMode);
             this.tbPgGameMode.Location = new System.Drawing.Point(4, 22);
             this.tbPgGameMode.Name = "tbPgGameMode";
             this.tbPgGameMode.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgGameMode.Size = new System.Drawing.Size(976, 738);
+            this.tbPgGameMode.Size = new System.Drawing.Size(976, 717);
             this.tbPgGameMode.TabIndex = 1;
             this.tbPgGameMode.Text = "Moduswahl";
             this.tbPgGameMode.UseVisualStyleBackColor = true;
             // 
+            // btnBackToMainMode
+            // 
+            this.btnBackToMainMode.Location = new System.Drawing.Point(893, 691);
+            this.btnBackToMainMode.Name = "btnBackToMainMode";
+            this.btnBackToMainMode.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainMode.TabIndex = 4;
+            this.btnBackToMainMode.Text = "Hauptmenü";
+            this.btnBackToMainMode.UseVisualStyleBackColor = true;
+            this.btnBackToMainMode.Click += new System.EventHandler(this.btnBackToMainMode_Click);
+            // 
             // btnStartNetMode
             // 
+            this.btnStartNetMode.Enabled = false;
             this.btnStartNetMode.Location = new System.Drawing.Point(342, 293);
             this.btnStartNetMode.Name = "btnStartNetMode";
             this.btnStartNetMode.Size = new System.Drawing.Size(300, 50);
@@ -215,6 +232,7 @@
             // tbPgGamePvP
             // 
             this.tbPgGamePvP.BackColor = System.Drawing.Color.Transparent;
+            this.tbPgGamePvP.Controls.Add(this.btnBackToModePvPData);
             this.tbPgGamePvP.Controls.Add(this.btnStartPvPGamePvPData);
             this.tbPgGamePvP.Controls.Add(this.txtPlayerName2PvPData);
             this.tbPgGamePvP.Controls.Add(this.lblPlayer2NamePvPDataDesc);
@@ -223,9 +241,19 @@
             this.tbPgGamePvP.Location = new System.Drawing.Point(4, 22);
             this.tbPgGamePvP.Name = "tbPgGamePvP";
             this.tbPgGamePvP.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgGamePvP.Size = new System.Drawing.Size(976, 738);
+            this.tbPgGamePvP.Size = new System.Drawing.Size(976, 717);
             this.tbPgGamePvP.TabIndex = 2;
             this.tbPgGamePvP.Text = "PvP-Data";
+            // 
+            // btnBackToModePvPData
+            // 
+            this.btnBackToModePvPData.Location = new System.Drawing.Point(881, 691);
+            this.btnBackToModePvPData.Name = "btnBackToModePvPData";
+            this.btnBackToModePvPData.Size = new System.Drawing.Size(87, 23);
+            this.btnBackToModePvPData.TabIndex = 5;
+            this.btnBackToModePvPData.Text = "Modusauswahl";
+            this.btnBackToModePvPData.UseVisualStyleBackColor = true;
+            this.btnBackToModePvPData.Click += new System.EventHandler(this.btnBackToModePvPData_Click);
             // 
             // btnStartPvPGamePvPData
             // 
@@ -281,7 +309,7 @@
             this.tbPgPvP.Location = new System.Drawing.Point(4, 22);
             this.tbPgPvP.Name = "tbPgPvP";
             this.tbPgPvP.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgPvP.Size = new System.Drawing.Size(976, 738);
+            this.tbPgPvP.Size = new System.Drawing.Size(976, 717);
             this.tbPgPvP.TabIndex = 3;
             this.tbPgPvP.Text = "PvP";
             this.tbPgPvP.UseVisualStyleBackColor = true;
@@ -421,6 +449,7 @@
             // 
             // tbPgDataPvC
             // 
+            this.tbPgDataPvC.Controls.Add(this.btnBackToModePvC);
             this.tbPgDataPvC.Controls.Add(this.cmbBxAIPvCData);
             this.tbPgDataPvC.Controls.Add(this.btnStartPvCGamePvCData);
             this.tbPgDataPvC.Controls.Add(this.lblPlayer2NamePvCDataDesc);
@@ -429,22 +458,32 @@
             this.tbPgDataPvC.Location = new System.Drawing.Point(4, 22);
             this.tbPgDataPvC.Name = "tbPgDataPvC";
             this.tbPgDataPvC.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgDataPvC.Size = new System.Drawing.Size(976, 738);
+            this.tbPgDataPvC.Size = new System.Drawing.Size(976, 717);
             this.tbPgDataPvC.TabIndex = 4;
             this.tbPgDataPvC.Text = "PvC-Data";
             this.tbPgDataPvC.UseVisualStyleBackColor = true;
             // 
+            // btnBackToModePvC
+            // 
+            this.btnBackToModePvC.Location = new System.Drawing.Point(881, 691);
+            this.btnBackToModePvC.Name = "btnBackToModePvC";
+            this.btnBackToModePvC.Size = new System.Drawing.Size(87, 23);
+            this.btnBackToModePvC.TabIndex = 11;
+            this.btnBackToModePvC.Text = "Modusauswahl";
+            this.btnBackToModePvC.UseVisualStyleBackColor = true;
+            this.btnBackToModePvC.Click += new System.EventHandler(this.btnBackToModePvC_Click);
+            // 
             // cmbBxAIPvCData
             // 
             this.cmbBxAIPvCData.FormattingEnabled = true;
-            this.cmbBxAIPvCData.Location = new System.Drawing.Point(450, 334);
+            this.cmbBxAIPvCData.Location = new System.Drawing.Point(447, 176);
             this.cmbBxAIPvCData.Name = "cmbBxAIPvCData";
             this.cmbBxAIPvCData.Size = new System.Drawing.Size(153, 21);
             this.cmbBxAIPvCData.TabIndex = 10;
             // 
             // btnStartPvCGamePvCData
             // 
-            this.btnStartPvCGamePvCData.Location = new System.Drawing.Point(342, 383);
+            this.btnStartPvCGamePvCData.Location = new System.Drawing.Point(339, 225);
             this.btnStartPvCGamePvCData.Name = "btnStartPvCGamePvCData";
             this.btnStartPvCGamePvCData.Size = new System.Drawing.Size(300, 50);
             this.btnStartPvCGamePvCData.TabIndex = 9;
@@ -455,7 +494,7 @@
             // lblPlayer2NamePvCDataDesc
             // 
             this.lblPlayer2NamePvCDataDesc.AutoSize = true;
-            this.lblPlayer2NamePvCDataDesc.Location = new System.Drawing.Point(393, 337);
+            this.lblPlayer2NamePvCDataDesc.Location = new System.Drawing.Point(390, 179);
             this.lblPlayer2NamePvCDataDesc.Name = "lblPlayer2NamePvCDataDesc";
             this.lblPlayer2NamePvCDataDesc.Size = new System.Drawing.Size(51, 13);
             this.lblPlayer2NamePvCDataDesc.TabIndex = 7;
@@ -463,7 +502,7 @@
             // 
             // txtPlayer1NamePvCData
             // 
-            this.txtPlayer1NamePvCData.Location = new System.Drawing.Point(450, 308);
+            this.txtPlayer1NamePvCData.Location = new System.Drawing.Point(447, 150);
             this.txtPlayer1NamePvCData.Name = "txtPlayer1NamePvCData";
             this.txtPlayer1NamePvCData.Size = new System.Drawing.Size(153, 20);
             this.txtPlayer1NamePvCData.TabIndex = 6;
@@ -471,7 +510,7 @@
             // lblPlayer1NamePvCDataDesc
             // 
             this.lblPlayer1NamePvCDataDesc.AutoSize = true;
-            this.lblPlayer1NamePvCDataDesc.Location = new System.Drawing.Point(393, 311);
+            this.lblPlayer1NamePvCDataDesc.Location = new System.Drawing.Point(390, 153);
             this.lblPlayer1NamePvCDataDesc.Name = "lblPlayer1NamePvCDataDesc";
             this.lblPlayer1NamePvCDataDesc.Size = new System.Drawing.Size(51, 13);
             this.lblPlayer1NamePvCDataDesc.TabIndex = 5;
@@ -489,7 +528,7 @@
             this.tbPgGamePvC.Location = new System.Drawing.Point(4, 22);
             this.tbPgGamePvC.Name = "tbPgGamePvC";
             this.tbPgGamePvC.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgGamePvC.Size = new System.Drawing.Size(976, 738);
+            this.tbPgGamePvC.Size = new System.Drawing.Size(976, 717);
             this.tbPgGamePvC.TabIndex = 5;
             this.tbPgGamePvC.Text = "PvC";
             this.tbPgGamePvC.UseVisualStyleBackColor = true;
@@ -632,7 +671,7 @@
             this.tbPgDataNetwork.Location = new System.Drawing.Point(4, 22);
             this.tbPgDataNetwork.Name = "tbPgDataNetwork";
             this.tbPgDataNetwork.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgDataNetwork.Size = new System.Drawing.Size(976, 738);
+            this.tbPgDataNetwork.Size = new System.Drawing.Size(976, 717);
             this.tbPgDataNetwork.TabIndex = 6;
             this.tbPgDataNetwork.Text = "Net-Data";
             this.tbPgDataNetwork.UseVisualStyleBackColor = true;
@@ -642,22 +681,33 @@
             this.tbPgNetwork.Location = new System.Drawing.Point(4, 22);
             this.tbPgNetwork.Name = "tbPgNetwork";
             this.tbPgNetwork.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgNetwork.Size = new System.Drawing.Size(976, 738);
+            this.tbPgNetwork.Size = new System.Drawing.Size(976, 717);
             this.tbPgNetwork.TabIndex = 7;
             this.tbPgNetwork.Text = "Network";
             this.tbPgNetwork.UseVisualStyleBackColor = true;
             // 
             // tbPgSettings
             // 
+            this.tbPgSettings.Controls.Add(this.btnBackToMainSettings);
             this.tbPgSettings.Controls.Add(this.lblStickCountSettingsDesc);
             this.tbPgSettings.Controls.Add(this.numUDStickCountSettings);
             this.tbPgSettings.Location = new System.Drawing.Point(4, 22);
             this.tbPgSettings.Name = "tbPgSettings";
             this.tbPgSettings.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPgSettings.Size = new System.Drawing.Size(976, 738);
+            this.tbPgSettings.Size = new System.Drawing.Size(976, 717);
             this.tbPgSettings.TabIndex = 8;
             this.tbPgSettings.Text = "Settings";
             this.tbPgSettings.UseVisualStyleBackColor = true;
+            // 
+            // btnBackToMainSettings
+            // 
+            this.btnBackToMainSettings.Location = new System.Drawing.Point(893, 691);
+            this.btnBackToMainSettings.Name = "btnBackToMainSettings";
+            this.btnBackToMainSettings.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMainSettings.TabIndex = 2;
+            this.btnBackToMainSettings.Text = "Hauptmenü";
+            this.btnBackToMainSettings.UseVisualStyleBackColor = true;
+            this.btnBackToMainSettings.Click += new System.EventHandler(this.btnBackToMainSettings_Click);
             // 
             // lblStickCountSettingsDesc
             // 
@@ -691,6 +741,7 @@
             // 
             // tbPgHighscore
             // 
+            this.tbPgHighscore.Controls.Add(this.btnBacktoMainHighscore);
             this.tbPgHighscore.Controls.Add(this.lstViewHighscores);
             this.tbPgHighscore.Location = new System.Drawing.Point(4, 22);
             this.tbPgHighscore.Name = "tbPgHighscore";
@@ -700,6 +751,16 @@
             this.tbPgHighscore.Text = "Highscore";
             this.tbPgHighscore.UseVisualStyleBackColor = true;
             // 
+            // btnBacktoMainHighscore
+            // 
+            this.btnBacktoMainHighscore.Location = new System.Drawing.Point(893, 691);
+            this.btnBacktoMainHighscore.Name = "btnBacktoMainHighscore";
+            this.btnBacktoMainHighscore.Size = new System.Drawing.Size(75, 23);
+            this.btnBacktoMainHighscore.TabIndex = 1;
+            this.btnBacktoMainHighscore.Text = "Hauptmenü";
+            this.btnBacktoMainHighscore.UseVisualStyleBackColor = true;
+            this.btnBacktoMainHighscore.Click += new System.EventHandler(this.btnBacktoMainHighscore_Click);
+            // 
             // lstViewHighscores
             // 
             this.lstViewHighscores.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -707,10 +768,10 @@
             this.colHsWon,
             this.colHsLost,
             this.colWPL});
-            this.lstViewHighscores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstViewHighscores.Dock = System.Windows.Forms.DockStyle.Top;
             this.lstViewHighscores.Location = new System.Drawing.Point(3, 3);
             this.lstViewHighscores.Name = "lstViewHighscores";
-            this.lstViewHighscores.Size = new System.Drawing.Size(970, 711);
+            this.lstViewHighscores.Size = new System.Drawing.Size(970, 571);
             this.lstViewHighscores.TabIndex = 0;
             this.lstViewHighscores.UseCompatibleStateImageBehavior = false;
             this.lstViewHighscores.View = System.Windows.Forms.View.Details;
@@ -849,6 +910,11 @@
         private System.Windows.Forms.ColumnHeader colHsPlayerName;
         private System.Windows.Forms.ColumnHeader colHsWon;
         private System.Windows.Forms.ColumnHeader colHsLost;
+        private System.Windows.Forms.Button btnBackToMainMode;
+        private System.Windows.Forms.Button btnBackToModePvPData;
+        private System.Windows.Forms.Button btnBackToMainSettings;
+        private System.Windows.Forms.Button btnBacktoMainHighscore;
+        private System.Windows.Forms.Button btnBackToModePvC;
         
     }
 }
