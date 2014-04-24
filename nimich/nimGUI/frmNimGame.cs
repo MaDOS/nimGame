@@ -52,6 +52,9 @@ namespace nimGUI
         {
             //this.tabMain.Size = new Size(984, 743); //Tableiste Sichtbar
             this.tabMain.Size = new Size(984, 764); //Tableiste unsichtbar
+
+            this.tabMain.SelectedTab = this.tbPgHighscore;
+            this.tabMain.SelectedTab = this.tbPgMain;
             Highscoremanager.load();
         }
     }
