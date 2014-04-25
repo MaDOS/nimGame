@@ -726,7 +726,7 @@
             0,
             0});
             this.numUDStickCountSettings.Minimum = new decimal(new int[] {
-            5,
+            13,
             0,
             0,
             0});
