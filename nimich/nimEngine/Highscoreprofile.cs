@@ -10,7 +10,7 @@ namespace nimEngine
     /*!
      * Speichert relevante Highscoredaten eines Spielers
      */
-    public class Highscoreprofile
+    public class HighscoreProfile
     {
         /*!
          * "ident" oder auch Name des Spielers (Identifikationsname)
@@ -59,7 +59,7 @@ namespace nimEngine
         	}
         }
 
-        public Highscoreprofile()
+        public HighscoreProfile()
         {
             this.Playername = "";
             this.Losses = 0;

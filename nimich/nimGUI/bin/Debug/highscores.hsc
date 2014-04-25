@@ -1,33 +1,13 @@
 <?xml version="1.0"?>
-<ArrayOfHighscoreprofile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Highscoreprofile>
+<ArrayOfHighscoreProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HighscoreProfile>
     <Playername>p1</Playername>
-    <Lost>16</Lost>
-    <Won>5</Won>
-  </Highscoreprofile>
-  <Highscoreprofile>
-    <Playername>p2</Playername>
-    <Lost>4</Lost>
-    <Won>16</Won>
-  </Highscoreprofile>
-  <Highscoreprofile>
-    <Playername>Mittel</Playername>
-    <Lost>1</Lost>
-    <Won>2</Won>
-  </Highscoreprofile>
-  <Highscoreprofile>
-    <Playername>Schwer</Playername>
-    <Lost>2</Lost>
-    <Won>0</Won>
-  </Highscoreprofile>
-  <Highscoreprofile>
-    <Playername>p3</Playername>
-    <Lost>0</Lost>
+    <Losses>0</Losses>
     <Won>1</Won>
-  </Highscoreprofile>
-  <Highscoreprofile>
-    <Playername>77-A3-26-67-CD-0A-9F-03-54-02-CF-34-BE-D2-5D</Playername>
-    <Lost>1</Lost>
+  </HighscoreProfile>
+  <HighscoreProfile>
+    <Playername>p2</Playername>
+    <Losses>1</Losses>
     <Won>0</Won>
-  </Highscoreprofile>
-</ArrayOfHighscoreprofile>
+  </HighscoreProfile>
+</ArrayOfHighscoreProfile>

@@ -11,16 +11,11 @@ C:\Users\Schüler\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimEngine\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.dll
 C:\Users\l00s3s\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
-D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.dll
-D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.pdb
-D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.dll
-D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.pdb
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.dll
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.pdb
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.dll
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.pdb
-D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.csprojResolveAssemblyReference.cache
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.dll
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.pdb
 C:\Users\Schüler\Desktop\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.dll
@@ -34,5 +29,10 @@ C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.d
 C:\Users\schueler.A109-17\Desktop\nimGame\nimich\nimEngine\obj\Debug\nimEngine.pdb
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.dll
 C:\Users\l00s3s\Desktop\projekte\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.dll
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\nimEngine.pdb
 D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.dll
 D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\bin\Debug\Serializer.pdb
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.csprojResolveAssemblyReference.cache
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.dll
+D:\Docs\Schule\Info LK\OOSE\nimGame.git\nimich\nimEngine\obj\Debug\nimEngine.pdb

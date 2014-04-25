@@ -738,6 +738,7 @@
             0,
             0,
             0});
+            this.numUDStickCountSettings.ValueChanged += new System.EventHandler(this.numUDStickCountSettings_ValueChanged);
             // 
             // tbPgHighscore
             // 

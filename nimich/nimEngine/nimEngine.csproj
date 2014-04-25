@@ -50,8 +50,8 @@
     <Compile Include="AI\AI_intermediate.cs" />
     <Compile Include="AI\AI_troll.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Highscoremanager.cs" />
-    <Compile Include="Highscoreprofile.cs" />
+    <Compile Include="HighscoreManager.cs" />
+    <Compile Include="HighscoreProfile.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

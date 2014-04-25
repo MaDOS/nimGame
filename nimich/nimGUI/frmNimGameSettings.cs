@@ -16,5 +16,10 @@ namespace nimGUI
         {
             this.tabMain.SelectedTab = this.tbPgMain;
         }
+
+        private void numUDStickCountSettings_ValueChanged(object sender, EventArgs e)
+        {
+            SettingsManager.settingsProfile.StickCount = (int)this.numUDStickCountSettings.Value;
+        }
 	}
 }

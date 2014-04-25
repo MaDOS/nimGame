@@ -45,7 +45,8 @@ namespace nimGUI
 
         private void frmNimGame_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Highscoremanager.save();
+            SettingsManager.save();
+            HighscoreManager.save();
         }
 
         private void frmNimGame_Load(object sender, EventArgs e)
@@ -55,7 +56,14 @@ namespace nimGUI
 
             this.tabMain.SelectedTab = this.tbPgHighscore;
             this.tabMain.SelectedTab = this.tbPgMain;
-            Highscoremanager.load();
+            SettingsManager.load();
+            HighscoreManager.load();
+            applySettings();
+        }
+
+        private void applySettings()
+        {
+            this.numUDStickCountSettings.Value = SettingsManager.settingsProfile.StickCount;
         }
     }
 }

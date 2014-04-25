@@ -74,8 +74,8 @@ namespace nimGUI
 
             MessageBox.Show(eventArgs.winner.ident + " hat gewonnen!");
 
-            Highscoremanager.addWin(winner);
-            Highscoremanager.addLoss(loser);
+            HighscoreManager.addWin(winner);
+            HighscoreManager.addLoss(loser);
 
             this.tabMain.SelectedTab = this.tbPgHighscore;
         }
@@ -162,8 +162,8 @@ namespace nimGUI
 
             MessageBox.Show(eventArgs.winner.ident + " hat gewonnen!");
 
-            Highscoremanager.addWin(winner);
-            Highscoremanager.addLoss(loser);
+            HighscoreManager.addWin(winner);
+            HighscoreManager.addLoss(loser);
 
             this.tabMain.SelectedTab = this.tbPgHighscore;
         }

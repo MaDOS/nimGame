@@ -11,14 +11,14 @@ namespace nimEngine
     /*!
      * Manager der das halten der Highscoredaten übernimmt und diese auch Serialisiert
      */
-    public static class Highscoremanager
+    public static class HighscoreManager
     {
         private static string filePath = Environment.CurrentDirectory + @"\highscores.hsc";
 
         /*!
          * Enthält alle Highscoreprofile und identifiziert diese anhand ihres "ident" den sie als "Player" hatten
          */
-        public static Dictionary<string, Highscoreprofile> highscoreProfiles = new Dictionary<string, Highscoreprofile>();
+        public static Dictionary<string, HighscoreProfile> highscoreProfiles = new Dictionary<string, HighscoreProfile>();
 
         /*!
          * Serialisiert die Highscoreprofile und speichert sie
@@ -27,7 +27,7 @@ namespace nimEngine
         {
             serializer.XMLserializer serializer = new serializer.XMLserializer(filePath);
             
-            serializer.Serialize<Highscoreprofile[]>(highscoreProfiles.Values.ToArray<Highscoreprofile>()); //Dictionary ist generisch und daher nicht serialisierbar, deswegen wird ein Array erzeugt und dieses serialisiert
+            serializer.Serialize<HighscoreProfile[]>(highscoreProfiles.Values.ToArray<HighscoreProfile>()); //Dictionary ist generisch und daher nicht serialisierbar, deswegen wird ein Array erzeugt und dieses serialisiert
         }
 
         /*!
@@ -38,8 +38,12 @@ namespace nimEngine
             highscoreProfiles.Clear();
 
         	serializer.XMLserializer serializer = new serializer.XMLserializer(filePath);
-        	Highscoreprofile[] hsps = serializer.Deserialize<Highscoreprofile[]>(); //temporäres Array zur Datenhaltung des Deserialiserten Highscoreprofil-Arrays
-        	foreach(Highscoreprofile hsp in hsps) //HighscoreProfil-Dictionary mit den deserialisierten Daten füllen
+        	HighscoreProfile[] hsps = serializer.Deserialize<HighscoreProfile[]>(); //temporäres Array zur Datenhaltung des Deserialiserten Highscoreprofil-Arrays
+
+            if (hsps == null)
+            { return; }
+
+        	foreach(HighscoreProfile hsp in hsps) //HighscoreProfil-Dictionary mit den deserialisierten Daten füllen
         	{
         		highscoreProfiles.Add(hsp.Playername, hsp);
         	}
@@ -52,7 +56,7 @@ namespace nimEngine
         {
             if (!highscoreProfiles.ContainsKey(playername))
             {
-                highscoreProfiles.Add(playername, new Highscoreprofile());
+                highscoreProfiles.Add(playername, new HighscoreProfile());
                 highscoreProfiles[playername].Playername = playername; //workaround damit das Highscoreprofile serialisierbar ist (parameterloser Konstruktor)
             }
 
@@ -66,7 +70,7 @@ namespace nimEngine
         {
             if (!highscoreProfiles.ContainsKey(playername))
             {
-                highscoreProfiles.Add(playername, new Highscoreprofile());
+                highscoreProfiles.Add(playername, new HighscoreProfile());
                 highscoreProfiles[playername].Playername = playername;
             }
 
