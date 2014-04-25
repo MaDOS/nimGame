@@ -6,6 +6,9 @@ using System.Threading;
 
 namespace nimEngine
 {
+    /*!
+     * Repräsentiert das Spiel an sich und übernimmt das Handling des Spielflusses
+     */
     public class Game
     {
     	/*!
@@ -152,7 +155,13 @@ namespace nimEngine
      */
     public class GameOverEventArgs : EventArgs
     {
+        /*!
+         * Gewinner
+         */
         public Player winner;
+        /*!
+         * Verlierer
+         */
         public Player loser;
 
         public GameOverEventArgs(Player winner, Player loser)
@@ -167,6 +176,9 @@ namespace nimEngine
      */
     public class StickCountChangedEventArgs : EventArgs
     {
+        /*!
+         * Hölzchendifferenz zwischen der derzeitigen Anzahl und der Anzahl vor dem letzten Zug
+         */
         public int Diff
         { get; set; }
 

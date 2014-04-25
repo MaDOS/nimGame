@@ -3,52 +3,50 @@
   <Class Name="nimEngine.AI.AI_easy" Collapsed="true">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAUAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AI\AI_easy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.AI.AI_expert" Collapsed="true">
     <Position X="0.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AI\AI_expert.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.AI.AI_hard" Collapsed="true">
     <Position X="0.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AI\AI_hard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.AI.AI_intermediate" Collapsed="true">
     <Position X="0.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AI\AI_intermediate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.Game">
     <Position X="9" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Delegate Name="nimEngine.Game.player1StartedTurnEventHandler" Collapsed="true">
+      <Delegate Name="nimEngine.Game.gameOverEventHandler">
         <TypeIdentifier>
           <NewMemberFileName>Game.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
-      <Delegate Name="nimEngine.Game.player2StartedTurnEventHandler" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Game.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="nimEngine.Game.gameOverEventHandler" Collapsed="true">
+      <Delegate Name="nimEngine.Game.stickCountChangedEventHandler">
         <TypeIdentifier>
           <NewMemberFileName>Game.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>wCAAAgBAAAIAAAAgAAAAAAAAAAAAAIAAAAAAAAAEAIA=</HashCode>
+      <HashCode>wAAEAgBAAAIAAAAgACAAAQAAAAAAAIAAAAAAAAAAAIA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -67,20 +65,30 @@
     <Position X="10.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>Game.cs</FileName>
+      <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.Human" Collapsed="true">
     <Position X="0.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAEAAAAACAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="nimEngine.Player">
     <Position X="6.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="nimEngine.Player.playerStartedTurnEventHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Player.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <HashCode>AAAQAAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>

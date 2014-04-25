@@ -19,7 +19,7 @@ namespace nimGUI
                 this.lstViewHighscores.Items.Clear();
                 foreach (Highscoreprofile hsp in Highscoremanager.highscoreProfiles.Values)
                 {
-                    this.lstViewHighscores.Items.Add(new ListViewItem(new string[] { hsp.Playername, hsp.Won.ToString(), hsp.Lost.ToString(), hsp.WonPerLost.ToString() }));
+                    this.lstViewHighscores.Items.Add(new ListViewItem(new string[] { hsp.Playername, hsp.Won.ToString(), hsp.Losses.ToString(), hsp.WonPerLost.ToString() }));
                 }
             }
         }

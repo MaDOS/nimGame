@@ -5,6 +5,9 @@ using System.Text;
 
 namespace nimEngine
 {
+    /*!
+     * Repräsentiert ein Hölzchen im Spiel (dummyclass)
+     */
     public class Stick
     {
         public override string ToString()

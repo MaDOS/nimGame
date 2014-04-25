@@ -13,15 +13,18 @@ namespace nimEngine
         public delegate void playerStartedTurnEventHandler(PlayerStartedTurnEventArgs eventArgs);
         public event playerStartedTurnEventHandler playerStartedTurn;
 
-    	/*! 
-    	 * Sollte Funktionalität implementieren welche als Rückgabe die gezogenen Hölzchen angibt
-    	 */
+        /*!
+         * Von Game aufgerufene Methode welche (möglicherweise) wartet bis der Spieler seinen Zug gemacht hat und Game die gezogene Hölzchenanzahl übermittelt
+         */
         public int Turn(int currentStickCount)
         {
             this.playerStartedTurn(new PlayerStartedTurnEventArgs(this));
             return doTurn(currentStickCount);
         }
 
+        /*! 
+    	 * Sollte Funktionalität implementieren welche als Rückgabe die gezogenen Hölzchenanzahl angibt
+    	 */
         protected abstract int doTurn(int currentStickCount);
         
         /*!

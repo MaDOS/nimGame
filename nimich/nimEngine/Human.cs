@@ -8,7 +8,7 @@ namespace nimEngine
 	public class Human : Player
     {
 		/*!
-		 * Nach setzen des AmountNextTurn gibt dieser die Rückgabe von Turn() frei
+		 * Nach setzen des AmountNextTurn gibt dieser die Rückgabe von doTurn() frei
 		 */
 		public bool ReadyForTurn = false;
 		
@@ -33,7 +33,7 @@ namespace nimEngine
 		{
 			this.ident = ident;
 		}
-		
+        
 		protected override int doTurn(int currentStickCount)
 		{
 			while(!this.ReadyForTurn)
