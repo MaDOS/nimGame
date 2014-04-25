@@ -23,11 +23,8 @@ namespace serializer
 
         public void Serialize<T>(T thing)
         {
-            //Neuer Serialisierer;
-            XmlSerializer serializer;
-            serializer = new XmlSerializer(typeof(T));
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
 
-            //Neuer Filestream; StartupPath = Projektpfad; \\Typ.xml = Name der Datei
             FileStream file = new FileStream(this.Path, FileMode.OpenOrCreate);
 
             serializer.Serialize(file, thing);
@@ -36,8 +33,13 @@ namespace serializer
 
         public T Deserialize<T>()
         {
+            if (!File.Exists(this.Path))
+            { return default(T); }
+
             XmlSerializer serializer = new XmlSerializer(typeof(T));
+
             FileStream file = new FileStream(this.Path, FileMode.OpenOrCreate);
+
             T thing = (T)serializer.Deserialize(file);
             file.Close();
 
